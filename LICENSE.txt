@@ -1,0 +1,4 @@
+/*
+* Copyright (c) 2011 - 2015. Karian Foehr - Cause Association.
+* All rights reserved.
+*/
