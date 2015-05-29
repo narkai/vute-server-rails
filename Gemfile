@@ -45,3 +45,5 @@ end
 
 gem 'doorkeeper'
 
+gem 'jsonapi-resources'
+
