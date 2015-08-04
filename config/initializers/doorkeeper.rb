@@ -4,6 +4,8 @@ Doorkeeper.configure do
   # :mongoid4, :mongo_mapper
   orm :active_record
 
+  # 
+
   # This block will be called to check whether the resource owner is authenticated or not.
   resource_owner_authenticator do
     fail "Please configure doorkeeper resource_owner_authenticator block located in #{__FILE__}"
@@ -11,6 +13,39 @@ Doorkeeper.configure do
     # Example implementation:
     #   User.find_by_id(session[:user_id]) || redirect_to(new_user_session_url)
   end
+
+  # Doorkeeper.configure do
+  #   resource_owner_from_credentials do |routes|
+  #     User.authenticate!(params[:username], params[:password])
+  #   end
+  # end
+
+  # Doorkeeper.configure do
+  #   resource_owner_from_credentials do |routes|
+  #     u = User.find_for_database_authentication(:email => params[:username])
+  #     u if u && u.valid_password?(params[:password])
+  #   end
+  # end
+
+  #Doorkeeper.configure do
+    enable_application_owner :confirmation => false
+    resource_owner_from_credentials do |routes|
+
+      p "----------------"
+      p params
+      p "----------------"
+
+      #User.first
+
+      #User.authenticate!(params[:username], params[:password])
+      User.find_by(email: params[:email]).try(:authenticate, params[:password])
+
+    end
+  #end
+
+  #Doorkeeper.configuration.token_grant_types << "password"
+
+  # 
 
   # If you want to restrict access to the web interface for adding oauth authorized applications, you need to declare the block below.
   # admin_authenticator do
@@ -96,6 +131,8 @@ Doorkeeper.configure do
   #   http://tools.ietf.org/html/rfc6819#section-4.4.3
   #
   # grant_flows %w(authorization_code client_credentials)
+
+  grant_flows %w(password)
 
   # Under some circumstances you might want to have applications auto-approved,
   # so that the user skips the authorization step.
