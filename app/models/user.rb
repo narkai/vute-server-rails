@@ -2,7 +2,7 @@ class User < ActiveRecord::Base
 
 	# attr_accessible :email, :password, :password_confirmation
 	has_secure_password
-	validates :password, length: { minimum: 8 }, allow_nil: true
+	validates :password, length: { minimum: 3 }, allow_nil: true
 	# validates_presence_of :password, :on => :create
 
 	# validates :password_confirmation, presence: true
