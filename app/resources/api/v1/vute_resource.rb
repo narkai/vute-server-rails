@@ -4,13 +4,13 @@ module Api
 
     	attributes :keyword
     	
-    	before_save :set_user
+   #  	before_save :set_user
 
-			private
+			# private
 			
-			def set_user
-				model.user = context[:current_user]
-			end
+			# def set_user
+			# 	User.user = context[:current_user]
+			# end
 
     end
   end
