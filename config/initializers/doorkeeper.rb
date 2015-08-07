@@ -27,23 +27,25 @@ Doorkeeper.configure do
   #   end
   # end
 
-  #Doorkeeper.configure do
-    enable_application_owner :confirmation => false
-    resource_owner_from_credentials do |routes|
+  enable_application_owner :confirmation => false
+  resource_owner_from_credentials do |routes|
 
-      p "----------------"
-      p params
-      p "----------------"
+    p "----------------"
+    p params
+    p "----------------"
 
-      #User.first
+    #User.first
+    #User.authenticate!(params[:username], params[:password])
 
-      #User.authenticate!(params[:username], params[:password])
-      User.find_by(email: params[:email]).try(:authenticate, params[:password])
+    #
 
-    end
-  #end
+    User.find_by(email: params[:email]).try(:authenticate, params[:password])
+
+  end
 
   #Doorkeeper.configuration.token_grant_types << "password"
+
+  grant_flows %w(password)
 
   # 
 
@@ -131,9 +133,6 @@ Doorkeeper.configure do
   #   http://tools.ietf.org/html/rfc6819#section-4.4.3
   #
   # grant_flows %w(authorization_code client_credentials)
-
-  grant_flows %w(password)
-
   # Under some circumstances you might want to have applications auto-approved,
   # so that the user skips the authorization step.
   # For example if dealing with a trusted application.

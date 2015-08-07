@@ -1,5 +1,33 @@
 Rails.application.routes.draw do
+
   use_doorkeeper
+
+  # 
+
+  # namespace :api do
+  #   namespace :v1 do
+  #     resources :profiles
+  #     resources :users
+  #   end
+  # end
+
+  # 
+
+  #API
+  namespace :api do
+    namespace :v1 do
+      jsonapi_resources :users
+      # jsonapi_resources :users, only: [:index, :create]
+      jsonapi_resources :vutes
+    end
+  end
+
+  # 
+
+  # get "/users/sign_up" => "users#new"
+  # post "/user" => "users#create"
+  # get 'users' => 'users#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,7 +82,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  get 'users' => 'users#index'
 
 end

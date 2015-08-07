@@ -8,9 +8,22 @@
 
 #
 
-# User.create! :email => "rian@rod.com", :password_digest => "rody"
-user = User.create! :email => "rian@rod.com", :password_digest => "rody", password: 'rody', password_confirmation: 'rody'
+user = nil
+# user = User.create! :name => "rian", :email => "rian@rod.com", :password_digest => "rody", password: 'rody', password_confirmation: 'rody'
+user = User.create! :name => "rian", :email => "rian@rod.com", password: 'rody', password_confirmation: 'rody'
+# user.save
 
-app = Doorkeeper::Application.new :name => 'rian', :redirect_uri => 'http://rian.com'
+app = Doorkeeper::Application.new :name => user.name, :redirect_uri => user.email
 app.owner = user
 app.save
+
+#
+
+# user = nil
+# user = User.create! :name => "jim", :email => "jim@rod.com", :password_digest => "rody", password: 'jim', password_confirmation: 'jim'
+
+# if user.nil?
+# 	app = Doorkeeper::Application.new :name => user.name, :redirect_uri => user.email
+# 	app.owner = user
+# 	app.save
+# end

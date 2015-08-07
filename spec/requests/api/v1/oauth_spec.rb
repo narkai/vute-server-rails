@@ -17,16 +17,20 @@ describe "oauth" do
 	  it "should respond with 200" do
 
 	    params = {
+	    	email: "rian@rod.com",
 	      grant_type: "password",
-	      email: "rian@rod.com",
 	      password: "rody"
 	    }
 
 	    post oauth_token_path, params
+	    
 	    # response.code.should eq "200"
 	    expect(response).to be_success
+
 	    json = JSON.parse(response.body)
 	    expect(json).to include("access_token")
+
+	    # p json
 
 	  end
 
