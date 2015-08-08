@@ -69,6 +69,7 @@ ActiveRecord::Schema.define(version: 20150804144143) do
 
   create_table "vutes", force: true do |t|
     t.string   "keyword"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

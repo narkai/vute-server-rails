@@ -8,14 +8,14 @@
 
 #
 
-user = nil
+# user = nil
 # user = User.create! :name => "rian", :email => "rian@rod.com", :password_digest => "rody", password: 'rody', password_confirmation: 'rody'
-user = User.create! :name => "rian", :email => "rian@rod.com", password: 'rody', password_confirmation: 'rody'
+# user = User.create! :name => "rian", :email => "rian@rod.com", password: 'rody', password_confirmation: 'rody'
 # user.save
 
-app = Doorkeeper::Application.new :name => user.name, :redirect_uri => user.email
-app.owner = user
-app.save
+# app = Doorkeeper::Application.new :name => user.name, :redirect_uri => 'urn:ietf:wg:oauth:2.0:oob'
+# app.owner = user
+# app.save
 
 #
 
@@ -27,3 +27,7 @@ app.save
 # 	app.owner = user
 # 	app.save
 # end
+
+#
+
+User.create! :name => "rian", :email => "rian@rod.com", password: 'rody', password_confirmation: 'rody'

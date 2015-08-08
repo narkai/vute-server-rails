@@ -1,7 +1,24 @@
 module Api
   module V1
     class VutesController < JSONAPI::ResourceController
-    	before_action :doorkeeper_authorize!
+
+    	prepend_before_action :doorkeeper_authorize!
+
+    	def context
+        {current_user: current_resource_owner}
+        # p "-----"
+        # p current_user
+        # p "-----"
+			end
+
+      # def me
+      #   respond_with current_resource_owner
+      # end
+
+			def current_resource_owner
+		    User.find(doorkeeper_token.resource_owner_id) if doorkeeper_token
+		  end
+
     end
   end
 end
