@@ -11,10 +11,11 @@ Rails.application.routes.draw do
   #   end
   # end
 
-  # 
+  #
 
   #API
   namespace :api do
+  # namespace :api, defaults: { format: :json } do
     namespace :v1 do
       jsonapi_resources :users
       # jsonapi_resources :users, only: [:index, :create]
@@ -22,7 +23,11 @@ Rails.application.routes.draw do
     end
   end
 
-  # 
+  #
+
+  # root 'users#index'
+
+  #
 
   # get "/users/sign_up" => "users#new"
   # post "/user" => "users#create"

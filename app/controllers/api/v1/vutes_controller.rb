@@ -5,10 +5,10 @@ module Api
     	prepend_before_action :doorkeeper_authorize!
 
     	def context
-    		current_user = current_resource_owner
-        p "-----"
-        p current_user
-        p "-----"
+        {current_user: current_resource_owner}
+        # p "-----"
+        # p current_user
+        # p "-----"
 			end
 
       # def me
