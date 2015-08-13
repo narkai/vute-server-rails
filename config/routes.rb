@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   #
 
+  root to: redirect("/doc")
+
   #API
   namespace :api do
     namespace :v1 do

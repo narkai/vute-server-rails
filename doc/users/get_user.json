@@ -17,7 +17,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/users/135",
+      "request_path": "/api/v1/users/142",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -27,7 +27,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"135\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/135\"},\"attributes\":{\"created-at\":\"2015-08-13T09:40:43.934Z\",\"updated-at\":\"2015-08-13T09:40:43.934Z\",\"name\":\"rian\",\"email\":\"rian@rod.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/135/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/135/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"142\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/142\"},\"attributes\":{\"created-at\":\"2015-08-13T10:25:15.618Z\",\"updated-at\":\"2015-08-13T10:25:15.618Z\",\"name\":\"rian\",\"email\":\"rian@rod.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/142/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/142/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
