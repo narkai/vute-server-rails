@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "name": "Users",
+      "examples": [
+        {
+          "description": "create a player and receive an error",
+          "link": "users/create_a_player_and_receive_an_error.json",
+          "groups": "all"
+        },
+        {
+          "description": "create a user",
+          "link": "users/create_a_user.json",
+          "groups": "all"
+        },
+        {
+          "description": "get user",
+          "link": "users/get_user.json",
+          "groups": "all"
+        },
+        {
+          "description": "list users",
+          "link": "users/list_users.json",
+          "groups": "all"
+        }
+      ]
+    }
+  ]
+}

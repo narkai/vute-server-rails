@@ -1,6 +1,6 @@
 module Api
   module V1
-    class VuteResource < JSONAPI::Resource
+    class VuteResource < BaseResource
 
     	attributes :keyword
 
@@ -8,7 +8,7 @@ module Api
       before_save :set_user
 
 			private
-			
+
 			def set_user
 				@model.user = context[:current_user]
 			end

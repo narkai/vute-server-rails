@@ -1,0 +1,56 @@
+{
+  "resource": "Users",
+  "http_method": "POST",
+  "route": "/api/v1/users",
+  "description": "create a player and receive an error",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "type",
+      "description": "          Should always be set to <code>users</code>.\n"
+    },
+    {
+      "scope": "attributes",
+      "require": true,
+      "name": "name",
+      "description": "          The name of the user.\n"
+    },
+    {
+      "scope": "attributes",
+      "require": true,
+      "name": "email",
+      "description": "          The email of the user.\n"
+    },
+    {
+      "scope": "attributes",
+      "require": true,
+      "name": "password",
+      "description": "          The password of the user.\n"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/users",
+      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":null,\"email\":\"rian@rod.com\",\"password\":\"rody\"}}}",
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\"errors\":[{\"title\":\"can't be blank\",\"detail\":\"name - can't be blank\",\"id\":null,\"href\":null,\"code\":100,\"source\":{\"pointer\":\"/data/attributes/name\"},\"links\":null,\"status\":\"unprocessable_entity\"}]}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}
