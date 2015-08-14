@@ -18,5 +18,6 @@ group :development, :test do
   gem 'spring'
   gem "shoulda-matchers", "~> 3.0.0.rc1", require: false
   gem "factory_girl_rails", "~> 4.5.0"
+  gem 'faker'
 
 end

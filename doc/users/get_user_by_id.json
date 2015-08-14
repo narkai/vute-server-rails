@@ -2,7 +2,7 @@
   "resource": "Users",
   "http_method": "GET",
   "route": "/api/v1/users/:id",
-  "description": "get user",
+  "description": "Get user by id",
   "explanation": null,
   "parameters": [
     {
@@ -17,7 +17,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/users/142",
+      "request_path": "/api/v1/users/560",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
@@ -27,7 +27,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"142\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/142\"},\"attributes\":{\"created-at\":\"2015-08-13T10:25:15.618Z\",\"updated-at\":\"2015-08-13T10:25:15.618Z\",\"name\":\"rian\",\"email\":\"rian@rod.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/142/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/142/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"560\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/560\"},\"attributes\":{\"created-at\":\"2015-08-14T16:48:56.574Z\",\"updated-at\":\"2015-08-14T16:48:56.574Z\",\"name\":\"Macey Hickle PhD\",\"email\":\"sylvia_nader@weimann.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/560/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/560/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

@@ -4,23 +4,38 @@
       "name": "Users",
       "examples": [
         {
-          "description": "create a player and receive an error",
+          "description": "Create a player and receive an error",
           "link": "users/create_a_player_and_receive_an_error.json",
           "groups": "all"
         },
         {
-          "description": "create a user",
+          "description": "Create a user",
           "link": "users/create_a_user.json",
           "groups": "all"
         },
         {
-          "description": "get user",
-          "link": "users/get_user.json",
+          "description": "Deleting an order",
+          "link": "users/deleting_an_order.json",
           "groups": "all"
         },
         {
-          "description": "list users",
+          "description": "Get user by id",
+          "link": "users/get_user_by_id.json",
+          "groups": "all"
+        },
+        {
+          "description": "Getting the headers",
+          "link": "users/getting_the_headers.json",
+          "groups": "all"
+        },
+        {
+          "description": "List users",
           "link": "users/list_users.json",
+          "groups": "all"
+        },
+        {
+          "description": "Updating a user",
+          "link": "users/updating_a_user.json",
           "groups": "all"
         }
       ]

@@ -1,8 +1,8 @@
 {
   "resource": "Users",
-  "http_method": "POST",
-  "route": "/api/v1/users",
-  "description": "Create a user",
+  "http_method": "PATCH",
+  "route": "/api/v1/users/:id",
+  "description": "Updating a user",
   "explanation": null,
   "parameters": [
     {
@@ -11,20 +11,22 @@
       "description": "          Should always be set to <code>users</code>.\n"
     },
     {
+      "required": true,
+      "name": "id",
+      "description": "          The id of the user.\n"
+    },
+    {
       "scope": "attributes",
-      "require": true,
       "name": "name",
       "description": "          The name of the user.\n"
     },
     {
       "scope": "attributes",
-      "require": true,
       "name": "email",
       "description": "          The email of the user.\n"
     },
     {
       "scope": "attributes",
-      "require": true,
       "name": "password",
       "description": "          The password of the user.\n"
     }
@@ -34,18 +36,18 @@
   ],
   "requests": [
     {
-      "request_method": "POST",
-      "request_path": "/api/v1/users",
-      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Jade Goyette II\",\"email\":\"reilly@bashirian.org\",\"password\":\"arcyu81wp\"}}}",
+      "request_method": "PATCH",
+      "request_path": "/api/v1/users/557",
+      "request_body": "{\"data\":{\"type\":\"users\",\"id\":\"557\",\"attributes\":{\"name\":\"Felicita Legros\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
-      "response_status": 201,
-      "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"561\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/561\"},\"attributes\":{\"created-at\":\"2015-08-14T16:48:56.589Z\",\"updated-at\":\"2015-08-14T16:48:56.589Z\",\"name\":\"Jade Goyette II\",\"email\":\"reilly@bashirian.org\",\"password\":\"arcyu81wp\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/561/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/561/vutes\"}}}}}",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"data\":{\"id\":\"557\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/557\"},\"attributes\":{\"created-at\":\"2015-08-14T16:48:56.522Z\",\"updated-at\":\"2015-08-14T16:48:56.543Z\",\"name\":\"Felicita Legros\",\"email\":\"sylvia_nader@weimann.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/557/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/557/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

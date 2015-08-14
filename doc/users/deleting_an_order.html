@@ -109,29 +109,9 @@ table th, table td {
       <h1>Users API</h1>
 
       <div class="article">
-        <h2>get user</h2>
-        <h3>GET /api/v1/users/:id</h3>
+        <h2>Deleting an order</h2>
+        <h3>DELETE /api/v1/users/:id</h3>
 
-          <h3>Parameters</h3>
-          <table class="parameters table table-striped table-bordered table-condensed">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="required">
-                    <span class="name">id</span>
-                </td>
-                <td>
-                  <span class="description">          ID of the user to be retrieved.
-</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
 
           <h3>Request</h3>
@@ -140,18 +120,14 @@ table th, table td {
             <pre class="request headers">Content-Type: application/vnd.api+json</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/users/142</pre>
+          <pre class="request route highlight">DELETE /api/v1/users/562</pre>
 
 
 
 
             <h3>Response</h3>
-              <h4>Headers</h4>
-              <pre class="response headers">Content-Type: application/vnd.api+json</pre>
             <h4>Status</h4>
-            <pre class="response status">200 OK</pre>
-              <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;142&quot;,&quot;type&quot;:&quot;users&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/142&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-13T10:25:15.618Z&quot;,&quot;updated-at&quot;:&quot;2015-08-13T10:25:15.618Z&quot;,&quot;name&quot;:&quot;rian&quot;,&quot;email&quot;:&quot;rian@rod.com&quot;,&quot;password&quot;:null},&quot;relationships&quot;:{&quot;vutes&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/142/relationships/vutes&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/users/142/vutes&quot;}}}}}</pre>
+            <pre class="response status">204 No Content</pre>
       </div>
     </div>
   </body>

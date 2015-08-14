@@ -1,6 +1,6 @@
 module Api
   module V1
-    
+
     RSpec.describe User do
       it { is_expected.to have_attribute :name }
 

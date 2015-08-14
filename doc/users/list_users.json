@@ -2,7 +2,7 @@
   "resource": "Users",
   "http_method": "GET",
   "route": "/api/v1/users",
-  "description": "list users",
+  "description": "List users",
   "explanation": null,
   "parameters": [
 
@@ -23,7 +23,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"140\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/140\"},\"attributes\":{\"created-at\":\"2015-08-13T10:25:15.582Z\",\"updated-at\":\"2015-08-13T10:25:15.582Z\",\"name\":\"rian\",\"email\":\"rian@rod.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/140/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/140/vutes\"}}}},{\"id\":\"141\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/141\"},\"attributes\":{\"created-at\":\"2015-08-13T10:25:15.587Z\",\"updated-at\":\"2015-08-13T10:25:15.587Z\",\"name\":\"jimi\",\"email\":\"jimi@rod.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/141/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/141/vutes\"}}}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/api/v1/users?page%5Blimit%5D=10\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/api/v1/users?page%5Blimit%5D=10\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"258\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/258\"},\"attributes\":{\"created-at\":\"2015-08-14T14:43:54.701Z\",\"updated-at\":\"2015-08-14T14:43:54.701Z\",\"name\":\"rian\",\"email\":\"rian@rod.com\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/258/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/258/vutes\"}}}},{\"id\":\"558\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/558\"},\"attributes\":{\"created-at\":\"2015-08-14T16:48:56.554Z\",\"updated-at\":\"2015-08-14T16:48:56.554Z\",\"name\":\"Dr. Athena Fay\",\"email\":\"jettie@coleosinski.biz\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/558/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/558/vutes\"}}}},{\"id\":\"559\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/559\"},\"attributes\":{\"created-at\":\"2015-08-14T16:48:56.557Z\",\"updated-at\":\"2015-08-14T16:48:56.557Z\",\"name\":\"Leonie Schinner\",\"email\":\"audrey_heaney@harvey.biz\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/559/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/559/vutes\"}}}}],\"meta\":{\"record-count\":3},\"links\":{\"first\":\"http://example.org/api/v1/users?page%5Blimit%5D=10\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/api/v1/users?page%5Blimit%5D=10\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

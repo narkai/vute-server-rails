@@ -26,6 +26,6 @@ module Api
         expect(subject.fetchable_fields.sort).to eq fetchable_fields.sort
       end
     end
-    
+
   end
 end
