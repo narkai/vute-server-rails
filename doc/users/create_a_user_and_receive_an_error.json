@@ -2,7 +2,7 @@
   "resource": "Users",
   "http_method": "POST",
   "route": "/api/v1/users",
-  "description": "Create a player and receive an error",
+  "description": "Create a user and receive an error",
   "explanation": null,
   "parameters": [
     {
@@ -36,7 +36,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/users",
-      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":null,\"email\":\"mercedes@welchmoore.org\",\"password\":\"p7hj2ykhd\"}}}",
+      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":null,\"email\":\"dominic@waelchi.org\",\"password\":\"h659ck8yf\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },

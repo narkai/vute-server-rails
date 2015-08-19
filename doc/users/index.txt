@@ -1,77 +1,5 @@
-Updating a user
----------------
-
-Parameters:
-  * type -           Should always be set to <code>users</code>.
-
-  * id -           The id of the user.
-
-  * name -           The name of the user.
-
-  * email -           The email of the user.
-
-  * password -           The password of the user.
-
-
-Request:
-  PATCH /api/v1/users/557
-  Content-Type: application/vnd.api+json
-
-  {"data":{"type":"users","id":"557","attributes":{"name":"Felicita Legros"}}}
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-  {"data":{"id":"557","type":"users","links":{"self":"http://example.org/api/v1/users/557"},"attributes":{"created-at":"2015-08-14T16:48:56.522Z","updated-at":"2015-08-14T16:48:56.543Z","name":"Felicita Legros","email":"sylvia_nader@weimann.com","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/557/relationships/vutes","related":"http://example.org/api/v1/users/557/vutes"}}}}}
-
-
-List users
-----------
-
-Request:
-  GET /api/v1/users
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-  {"data":[{"id":"258","type":"users","links":{"self":"http://example.org/api/v1/users/258"},"attributes":{"created-at":"2015-08-14T14:43:54.701Z","updated-at":"2015-08-14T14:43:54.701Z","name":"rian","email":"rian@rod.com","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/258/relationships/vutes","related":"http://example.org/api/v1/users/258/vutes"}}}},{"id":"558","type":"users","links":{"self":"http://example.org/api/v1/users/558"},"attributes":{"created-at":"2015-08-14T16:48:56.554Z","updated-at":"2015-08-14T16:48:56.554Z","name":"Dr. Athena Fay","email":"jettie@coleosinski.biz","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/558/relationships/vutes","related":"http://example.org/api/v1/users/558/vutes"}}}},{"id":"559","type":"users","links":{"self":"http://example.org/api/v1/users/559"},"attributes":{"created-at":"2015-08-14T16:48:56.557Z","updated-at":"2015-08-14T16:48:56.557Z","name":"Leonie Schinner","email":"audrey_heaney@harvey.biz","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/559/relationships/vutes","related":"http://example.org/api/v1/users/559/vutes"}}}}],"meta":{"record-count":3},"links":{"first":"http://example.org/api/v1/users?page%5Blimit%5D=10\u0026page%5Boffset%5D=0","last":"http://example.org/api/v1/users?page%5Blimit%5D=10\u0026page%5Boffset%5D=0"}}
-
-
-Getting the headers
--------------------
-
-Request:
-  HEAD /api/v1/users
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-
-Get user by id
---------------
-
-Parameters:
-  * id -           ID of the user to be retrieved.
-
-
-Request:
-  GET /api/v1/users/560
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-  {"data":{"id":"560","type":"users","links":{"self":"http://example.org/api/v1/users/560"},"attributes":{"created-at":"2015-08-14T16:48:56.574Z","updated-at":"2015-08-14T16:48:56.574Z","name":"Macey Hickle PhD","email":"sylvia_nader@weimann.com","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/560/relationships/vutes","related":"http://example.org/api/v1/users/560/vutes"}}}}}
-
-
-Create a player and receive an error
-------------------------------------
+Create a user and receive an error
+----------------------------------
 
 Parameters:
   * type -           Should always be set to <code>users</code>.
@@ -87,7 +15,7 @@ Request:
   POST /api/v1/users
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","attributes":{"name":null,"email":"mercedes@welchmoore.org","password":"p7hj2ykhd"}}}
+  {"data":{"type":"users","attributes":{"name":null,"email":"dominic@waelchi.org","password":"h659ck8yf"}}}
 
 Response:
   Status: 422 Unprocessable Entity
@@ -113,22 +41,71 @@ Request:
   POST /api/v1/users
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","attributes":{"name":"Jade Goyette II","email":"reilly@bashirian.org","password":"arcyu81wp"}}}
+  {"data":{"type":"users","attributes":{"name":"Cleta Kautzer","email":"colin@schuster.info","password":"wzeeq58r9"}}}
 
 Response:
   Status: 201 Created
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"561","type":"users","links":{"self":"http://example.org/api/v1/users/561"},"attributes":{"created-at":"2015-08-14T16:48:56.589Z","updated-at":"2015-08-14T16:48:56.589Z","name":"Jade Goyette II","email":"reilly@bashirian.org","password":"arcyu81wp"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/561/relationships/vutes","related":"http://example.org/api/v1/users/561/vutes"}}}}}
+  {"data":{"id":"136","type":"users","links":{"self":"http://example.org/api/v1/users/136"},"attributes":{"created-at":"2015-08-19T08:27:50.598Z","updated-at":"2015-08-19T08:27:50.598Z","name":"Cleta Kautzer","email":"colin@schuster.info","password":"wzeeq58r9"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/136/relationships/vutes","related":"http://example.org/api/v1/users/136/vutes"}}}}}
 
 
-Deleting an order
------------------
+Updating a user
+---------------
+
+Parameters:
+  * type -           Should always be set to <code>users</code>.
+
+  * id -           The id of the user.
+
+  * name -           The name of the user.
+
+  * email -           The email of the user.
+
+  * password -           The password of the user.
+
 
 Request:
-  DELETE /api/v1/users/562
+  PATCH /api/v1/users/137
+  Authorization: Bearer 0f32a2c5e4a26ec345c2a19059c607668dc9ccf095576501e5dfe766ca067624
+  Content-Type: application/vnd.api+json
+
+  {"data":{"type":"users","id":"137","attributes":{"name":"Lauriane Stokes"}}}
+
+Response:
+  Status: 200 OK
+  Content-Type: application/vnd.api+json
+
+  {"data":{"id":"137","type":"users","links":{"self":"http://example.org/api/v1/users/137"},"attributes":{"created-at":"2015-08-19T08:27:50.604Z","updated-at":"2015-08-19T08:27:50.629Z","name":"Lauriane Stokes","email":"leilani@walshoberbrunner.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/137/relationships/vutes","related":"http://example.org/api/v1/users/137/vutes"}}}}}
+
+
+Deleting a user
+---------------
+
+Request:
+  DELETE /api/v1/users/138
+  Authorization: Bearer 62251714b0438cca5f1b220f56bbd35a8daaa45fe2898f40471defeddf285013
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 204 No Content
 
+
+
+Get user by id
+--------------
+
+Parameters:
+  * id -           ID of the user to be retrieved.
+
+
+Request:
+  GET /api/v1/users/139
+  Authorization: Bearer 3e5eb87ca303b8e9c84c240300bbe544bfd0170e5a4ad4877d67ab49cfc6c9a1
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 200 OK
+  Content-Type: application/vnd.api+json
+
+  {"data":{"id":"139","type":"users","links":{"self":"http://example.org/api/v1/users/139"},"attributes":{"created-at":"2015-08-19T08:27:50.660Z","updated-at":"2015-08-19T08:27:50.660Z","name":"Gaetano Haag","email":"leilani@walshoberbrunner.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/139/relationships/vutes","related":"http://example.org/api/v1/users/139/vutes"}}}}}

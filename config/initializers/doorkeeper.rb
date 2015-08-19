@@ -4,17 +4,16 @@ Doorkeeper.configure do
 
   #
 
-  resource_owner_authenticator do
-    fail "Please configure doorkeeper resource_owner_authenticator block located in #{__FILE__}"
-  end
+  # resource_owner_authenticator do
+  #   current_user
+  # end
 
   #
 
   enable_application_owner :confirmation => false
+
   resource_owner_from_credentials do |routes|
-
     User.find_by(email: params[:email]).try(:authenticate, params[:password])
-
   end
 
   grant_flows %w(password)

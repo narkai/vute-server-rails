@@ -30,4 +30,4 @@
 
 #
 
-User.create! :name => "rian", :email => "rian@rod.com", password: 'rody', password_confirmation: 'rody'
+User.create! :name => "rian", :email => "rian@rod.com", password: 'rody'

@@ -36,7 +36,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/users",
-      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Jade Goyette II\",\"email\":\"reilly@bashirian.org\",\"password\":\"arcyu81wp\"}}}",
+      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Cleta Kautzer\",\"email\":\"colin@schuster.info\",\"password\":\"wzeeq58r9\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
@@ -45,7 +45,7 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"561\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/561\"},\"attributes\":{\"created-at\":\"2015-08-14T16:48:56.589Z\",\"updated-at\":\"2015-08-14T16:48:56.589Z\",\"name\":\"Jade Goyette II\",\"email\":\"reilly@bashirian.org\",\"password\":\"arcyu81wp\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/561/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/561/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"136\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/136\"},\"attributes\":{\"created-at\":\"2015-08-19T08:27:50.598Z\",\"updated-at\":\"2015-08-19T08:27:50.598Z\",\"name\":\"Cleta Kautzer\",\"email\":\"colin@schuster.info\",\"password\":\"wzeeq58r9\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/136/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/136/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

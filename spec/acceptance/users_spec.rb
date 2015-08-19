@@ -4,6 +4,7 @@ module Api
   module V1
 
     RSpec.resource "Users" do
+
       header "Content-Type", "application/vnd.api+json"
       header "Accept", "application/vnd.api+json"
 
@@ -56,11 +57,25 @@ module Api
         let(:email) { Faker::Internet.email }
         let(:password) { Faker::Internet.password(8) }
 
-        example "Create a player and receive an error" do
+        example "Create a user and receive an error" do
           do_request
           expect(status).to eq 422
         end
       end
+
+      #
+
+      # get "/api/v1/users" do
+      #   before do
+      #     FactoryGirl.create(:user, name: Faker::Name.name, email: Faker::Internet.email)
+      #     FactoryGirl.create(:user, name: Faker::Name.name, email: Faker::Internet.email)
+      #   end
+      #
+      #   example "List users" do
+      #     do_request
+      #     expect(status).to eq 200
+      #   end
+      # end
 
       #
 
@@ -74,6 +89,10 @@ module Api
         end
 
         example "Get user by id" do
+          token = Doorkeeper::AccessToken.find_or_create_for(nil, id, '', 10.minutes.from_now, nil).token
+          header_value = "Bearer " + token
+          header "Authorization", header_value
+
           do_request
           expect(status).to eq 200
         end
@@ -98,25 +117,33 @@ module Api
           The password of the user.
         DESC
 
+        let(:user) do
+          FactoryGirl.create(:user)
+        end
+
         let(:id) do
-          @user_id = FactoryGirl.create(:user).id.to_s
+          user.id.to_s
         end
 
         let(:params) {
-          {
-            data: {
-              type: :users,
-              id: @user_id,
-              attributes: {
-                name: Faker::Name.name
-              }
-            }
-          }
+         {
+           data: {
+             type: :users,
+             id: id,
+             attributes: {
+               name: Faker::Name.name
+             }
+           }
+         }
         }
 
         let(:raw_post) { params.to_json }
 
         example "Updating a user" do
+          token = Doorkeeper::AccessToken.find_or_create_for(nil, id, '', 10.minutes.from_now, nil).token
+          header_value = "Bearer " + token
+          header "Authorization", header_value
+
           do_request
           expect(status).to eq(200)
         end
@@ -129,33 +156,24 @@ module Api
           FactoryGirl.create(:user).id
         end
 
-        example_request "Deleting an order" do
+        example "Deleting a user" do
+          token = Doorkeeper::AccessToken.find_or_create_for(nil, id, '', 10.minutes.from_now, nil).token
+          header_value = "Bearer " + token
+          header "Authorization", header_value
+
+          do_request
           expect(status).to eq(204)
         end
       end
 
       #
 
-      get "/api/v1/users" do
-        before do
-          FactoryGirl.create(:user, name: Faker::Name.name, email: Faker::Internet.email)
-          FactoryGirl.create(:user, name: Faker::Name.name, email: Faker::Internet.email)
-        end
-
-        example "List users" do
-          do_request
-          expect(status).to eq 200
-        end
-      end
-
-      #
-
-      head "/api/v1/users" do
-        example_request "Getting the headers" do
-          # expect(response_headers["Cache-Control"]).to eq("no-cache")
-          expect(response_headers["Content-Type"]).to eq("application/vnd.api+json")
-        end
-      end
+      # head "/api/v1/users" do
+      #   example_request "Getting the headers" do
+      #     # expect(response_headers["Cache-Control"]).to eq("no-cache")
+      #     expect(response_headers["Content-Type"]).to eq("application/vnd.api+json")
+      #   end
+      # end
 
     end
 
