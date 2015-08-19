@@ -1,0 +1,44 @@
+{
+  "resource": "Vutes",
+  "http_method": "POST",
+  "route": "/api/v1/vutes",
+  "description": "Create a vute",
+  "explanation": null,
+  "parameters": [
+    {
+      "required": true,
+      "name": "type",
+      "description": "          Should always be set to <code>vutes</code>.\n"
+    },
+    {
+      "scope": "attributes",
+      "require": true,
+      "name": "keyword",
+      "description": "          The keyword of the vute.\n"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/vutes",
+      "request_body": "{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"The FTP sensor is down, calculate the back-end interface so we can back up the AGP card!\"}}}",
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 201,
+      "response_status_text": "Created",
+      "response_body": "{\"data\":{\"id\":\"20\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/20\"},\"attributes\":{\"created-at\":\"2015-08-19T14:08:55.304Z\",\"updated-at\":\"2015-08-19T14:08:55.304Z\",\"keyword\":\"The FTP sensor is down, calculate the back-end interface so we can back up the AGP card!\"},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/20/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/20/user\"}}}}}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}

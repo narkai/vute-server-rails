@@ -89,10 +89,7 @@ module Api
         end
 
         example "Get user by id" do
-          token = Doorkeeper::AccessToken.find_or_create_for(nil, id, '', 10.minutes.from_now, nil).token
-          header_value = "Bearer " + token
-          header "Authorization", header_value
-
+          header "Authorization", authHeaderValue(id)
           do_request
           expect(status).to eq 200
         end
@@ -126,7 +123,7 @@ module Api
         end
 
         let(:params) {
-         {
+          {
            data: {
              type: :users,
              id: id,
@@ -134,16 +131,13 @@ module Api
                name: Faker::Name.name
              }
            }
-         }
+          }
         }
 
         let(:raw_post) { params.to_json }
 
         example "Updating a user" do
-          token = Doorkeeper::AccessToken.find_or_create_for(nil, id, '', 10.minutes.from_now, nil).token
-          header_value = "Bearer " + token
-          header "Authorization", header_value
-
+          header "Authorization", authHeaderValue(id)
           do_request
           expect(status).to eq(200)
         end
@@ -157,10 +151,7 @@ module Api
         end
 
         example "Deleting a user" do
-          token = Doorkeeper::AccessToken.find_or_create_for(nil, id, '', 10.minutes.from_now, nil).token
-          header_value = "Bearer " + token
-          header "Authorization", header_value
-
+          header "Authorization", authHeaderValue(id)
           do_request
           expect(status).to eq(204)
         end

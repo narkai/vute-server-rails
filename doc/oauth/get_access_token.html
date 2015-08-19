@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Users API</title>
+    <title>Oauth API</title>
     <meta charset="utf-8">
     <style>
       
@@ -106,11 +106,14 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>Users API</h1>
+      <h1>Oauth API</h1>
 
       <div class="article">
-        <h2>Create a user</h2>
-        <h3>POST /api/v1/users</h3>
+        <h2>Get access token</h2>
+        <h3>POST /oauth/token</h3>
+          <p class="explanation">
+            By resource owner client credentials flow
+          </p>
 
           <h3>Parameters</h3>
           <table class="parameters table table-striped table-bordered table-condensed">
@@ -123,25 +126,16 @@ table th, table td {
             <tbody>
               <tr>
                 <td class="required">
-                    <span class="name">type</span>
+                    <span class="name">grant_type</span>
                 </td>
                 <td>
-                  <span class="description">          Should always be set to &lt;code&gt;users&lt;/code&gt;.
+                  <span class="description">          Should always be set to &lt;code&gt;password&lt;/code&gt;.
 </span>
                 </td>
               </tr>
               <tr>
-                <td>
-                    <span class="name">attributes[name]</span>
-                </td>
-                <td>
-                  <span class="description">          The name of the user.
-</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <span class="name">attributes[email]</span>
+                <td class="required">
+                    <span class="name">email</span>
                 </td>
                 <td>
                   <span class="description">          The email of the user.
@@ -149,8 +143,8 @@ table th, table td {
                 </td>
               </tr>
               <tr>
-                <td>
-                    <span class="name">attributes[password]</span>
+                <td class="required">
+                    <span class="name">password</span>
                 </td>
                 <td>
                   <span class="description">          The password of the user.
@@ -164,24 +158,23 @@ table th, table td {
           <h3>Request</h3>
 
             <h4>Headers</h4>
-            <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3</pre>
+            <pre class="request headers">Content-Type: application/json</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">POST /api/v1/users</pre>
+          <pre class="request route highlight">POST /oauth/token</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"users","attributes":{"name":"Frida Prohaska","email":"reese_goodwin@rath.biz","password":"rpsmdkdky"}}}</pre>
+            <pre class="request body">{"grant_type":"password","email":"janis@padberg.biz","password":"7dehro5dn"}</pre>
 
 
             <h3>Response</h3>
               <h4>Headers</h4>
-              <pre class="response headers">Content-Type: application/vnd.api+json</pre>
+              <pre class="response headers">Content-Type: application/json; charset=utf-8</pre>
             <h4>Status</h4>
-            <pre class="response status">201 Created</pre>
+            <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;609&quot;,&quot;type&quot;:&quot;users&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/609&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-19T14:08:55.358Z&quot;,&quot;updated-at&quot;:&quot;2015-08-19T14:08:55.358Z&quot;,&quot;name&quot;:&quot;Frida Prohaska&quot;,&quot;email&quot;:&quot;reese_goodwin@rath.biz&quot;,&quot;password&quot;:&quot;rpsmdkdky&quot;},&quot;relationships&quot;:{&quot;vutes&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/609/relationships/vutes&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/users/609/vutes&quot;}}}}}</pre>
+              <pre class="response body">{&quot;access_token&quot;:&quot;b68ebe97afe0df4ed07c352009a37782038a5655ab49e3120ffefcb8a1ed2946&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:7200,&quot;created_at&quot;:1439993335}</pre>
       </div>
     </div>
   </body>

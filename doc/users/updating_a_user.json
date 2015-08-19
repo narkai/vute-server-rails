@@ -37,18 +37,18 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "/api/v1/users/137",
-      "request_body": "{\"data\":{\"type\":\"users\",\"id\":\"137\",\"attributes\":{\"name\":\"Lauriane Stokes\"}}}",
+      "request_path": "/api/v1/users/610",
+      "request_body": "{\"data\":{\"type\":\"users\",\"id\":\"610\",\"attributes\":{\"name\":\"Kiara Runte\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 0f32a2c5e4a26ec345c2a19059c607668dc9ccf095576501e5dfe766ca067624"
+        "Authorization": "Bearer 6fb11fea65e25c2825f2d68a17db76e448dafd015da55722531c479f6613a8e8"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"137\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/137\"},\"attributes\":{\"created-at\":\"2015-08-19T08:27:50.604Z\",\"updated-at\":\"2015-08-19T08:27:50.629Z\",\"name\":\"Lauriane Stokes\",\"email\":\"leilani@walshoberbrunner.org\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/137/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/137/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"610\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/610\"},\"attributes\":{\"created-at\":\"2015-08-19T14:08:55.365Z\",\"updated-at\":\"2015-08-19T14:08:55.375Z\",\"name\":\"Kiara Runte\",\"email\":\"janis@padberg.biz\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/610/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/610/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

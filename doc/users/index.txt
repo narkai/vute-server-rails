@@ -1,27 +1,20 @@
-Create a user and receive an error
-----------------------------------
+Get user by id
+--------------
 
 Parameters:
-  * type -           Should always be set to <code>users</code>.
-
-  * name -           The name of the user.
-
-  * email -           The email of the user.
-
-  * password -           The password of the user.
+  * id -           ID of the user to be retrieved.
 
 
 Request:
-  POST /api/v1/users
+  GET /api/v1/users/608
+  Authorization: Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3
   Content-Type: application/vnd.api+json
-
-  {"data":{"type":"users","attributes":{"name":null,"email":"dominic@waelchi.org","password":"h659ck8yf"}}}
 
 Response:
-  Status: 422 Unprocessable Entity
+  Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"errors":[{"title":"can't be blank","detail":"name - can't be blank","id":null,"href":null,"code":100,"source":{"pointer":"/data/attributes/name"},"links":null,"status":"unprocessable_entity"}]}
+  {"data":{"id":"608","type":"users","links":{"self":"http://example.org/api/v1/users/608"},"attributes":{"created-at":"2015-08-19T14:08:55.316Z","updated-at":"2015-08-19T14:08:55.316Z","name":"Wilhelm Streich Sr.","email":"janis@padberg.biz","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/608/relationships/vutes","related":"http://example.org/api/v1/users/608/vutes"}}}}}
 
 
 Create a user
@@ -39,15 +32,16 @@ Parameters:
 
 Request:
   POST /api/v1/users
+  Authorization: Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","attributes":{"name":"Cleta Kautzer","email":"colin@schuster.info","password":"wzeeq58r9"}}}
+  {"data":{"type":"users","attributes":{"name":"Frida Prohaska","email":"reese_goodwin@rath.biz","password":"rpsmdkdky"}}}
 
 Response:
   Status: 201 Created
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"136","type":"users","links":{"self":"http://example.org/api/v1/users/136"},"attributes":{"created-at":"2015-08-19T08:27:50.598Z","updated-at":"2015-08-19T08:27:50.598Z","name":"Cleta Kautzer","email":"colin@schuster.info","password":"wzeeq58r9"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/136/relationships/vutes","related":"http://example.org/api/v1/users/136/vutes"}}}}}
+  {"data":{"id":"609","type":"users","links":{"self":"http://example.org/api/v1/users/609"},"attributes":{"created-at":"2015-08-19T14:08:55.358Z","updated-at":"2015-08-19T14:08:55.358Z","name":"Frida Prohaska","email":"reese_goodwin@rath.biz","password":"rpsmdkdky"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/609/relationships/vutes","related":"http://example.org/api/v1/users/609/vutes"}}}}}
 
 
 Updating a user
@@ -66,25 +60,52 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/users/137
-  Authorization: Bearer 0f32a2c5e4a26ec345c2a19059c607668dc9ccf095576501e5dfe766ca067624
+  PATCH /api/v1/users/610
+  Authorization: Bearer 6fb11fea65e25c2825f2d68a17db76e448dafd015da55722531c479f6613a8e8
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","id":"137","attributes":{"name":"Lauriane Stokes"}}}
+  {"data":{"type":"users","id":"610","attributes":{"name":"Kiara Runte"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"137","type":"users","links":{"self":"http://example.org/api/v1/users/137"},"attributes":{"created-at":"2015-08-19T08:27:50.604Z","updated-at":"2015-08-19T08:27:50.629Z","name":"Lauriane Stokes","email":"leilani@walshoberbrunner.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/137/relationships/vutes","related":"http://example.org/api/v1/users/137/vutes"}}}}}
+  {"data":{"id":"610","type":"users","links":{"self":"http://example.org/api/v1/users/610"},"attributes":{"created-at":"2015-08-19T14:08:55.365Z","updated-at":"2015-08-19T14:08:55.375Z","name":"Kiara Runte","email":"janis@padberg.biz","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/610/relationships/vutes","related":"http://example.org/api/v1/users/610/vutes"}}}}}
+
+
+Create a user and receive an error
+----------------------------------
+
+Parameters:
+  * type -           Should always be set to <code>users</code>.
+
+  * name -           The name of the user.
+
+  * email -           The email of the user.
+
+  * password -           The password of the user.
+
+
+Request:
+  POST /api/v1/users
+  Authorization: Bearer 6fb11fea65e25c2825f2d68a17db76e448dafd015da55722531c479f6613a8e8
+  Content-Type: application/vnd.api+json
+
+  {"data":{"type":"users","attributes":{"name":null,"email":"waldo@schiller.info","password":"t62bqrljt"}}}
+
+Response:
+  Status: 422 Unprocessable Entity
+  Content-Type: application/vnd.api+json
+
+  {"errors":[{"title":"can't be blank","detail":"name - can't be blank","id":null,"href":null,"code":100,"source":{"pointer":"/data/attributes/name"},"links":null,"status":"unprocessable_entity"}]}
 
 
 Deleting a user
 ---------------
 
 Request:
-  DELETE /api/v1/users/138
-  Authorization: Bearer 62251714b0438cca5f1b220f56bbd35a8daaa45fe2898f40471defeddf285013
+  DELETE /api/v1/users/611
+  Authorization: Bearer eb7822c1f0e00702e37cb8f9416d0721ad2111413382cd8345ad6d04513406c8
   Content-Type: application/vnd.api+json
 
 Response:
@@ -92,20 +113,3 @@ Response:
 
 
 
-Get user by id
---------------
-
-Parameters:
-  * id -           ID of the user to be retrieved.
-
-
-Request:
-  GET /api/v1/users/139
-  Authorization: Bearer 3e5eb87ca303b8e9c84c240300bbe544bfd0170e5a4ad4877d67ab49cfc6c9a1
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-  {"data":{"id":"139","type":"users","links":{"self":"http://example.org/api/v1/users/139"},"attributes":{"created-at":"2015-08-19T08:27:50.660Z","updated-at":"2015-08-19T08:27:50.660Z","name":"Gaetano Haag","email":"leilani@walshoberbrunner.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/139/relationships/vutes","related":"http://example.org/api/v1/users/139/vutes"}}}}}

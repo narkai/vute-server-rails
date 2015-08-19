@@ -1,6 +1,16 @@
 {
   "resources": [
     {
+      "name": "Oauth",
+      "examples": [
+        {
+          "description": "Get access token",
+          "link": "oauth/get_access_token.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
       "name": "Users",
       "examples": [
         {
@@ -26,6 +36,16 @@
         {
           "description": "Updating a user",
           "link": "users/updating_a_user.json",
+          "groups": "all"
+        }
+      ]
+    },
+    {
+      "name": "Vutes",
+      "examples": [
+        {
+          "description": "Create a vute",
+          "link": "vutes/create_a_vute.json",
           "groups": "all"
         }
       ]

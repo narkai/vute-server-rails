@@ -13,11 +13,11 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/api/v1/users/138",
+      "request_path": "/api/v1/users/611",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 62251714b0438cca5f1b220f56bbd35a8daaa45fe2898f40471defeddf285013"
+        "Authorization": "Bearer eb7822c1f0e00702e37cb8f9416d0721ad2111413382cd8345ad6d04513406c8"
       },
       "request_query_parameters": {
       },

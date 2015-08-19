@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Users API</title>
+    <title>Vutes API</title>
     <meta charset="utf-8">
     <style>
       
@@ -106,11 +106,11 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>Users API</h1>
+      <h1>Vutes API</h1>
 
       <div class="article">
-        <h2>Create a user</h2>
-        <h3>POST /api/v1/users</h3>
+        <h2>Create a vute</h2>
+        <h3>POST /api/v1/vutes</h3>
 
           <h3>Parameters</h3>
           <table class="parameters table table-striped table-bordered table-condensed">
@@ -126,34 +126,16 @@ table th, table td {
                     <span class="name">type</span>
                 </td>
                 <td>
-                  <span class="description">          Should always be set to &lt;code&gt;users&lt;/code&gt;.
+                  <span class="description">          Should always be set to &lt;code&gt;vutes&lt;/code&gt;.
 </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                    <span class="name">attributes[name]</span>
+                    <span class="name">attributes[keyword]</span>
                 </td>
                 <td>
-                  <span class="description">          The name of the user.
-</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <span class="name">attributes[email]</span>
-                </td>
-                <td>
-                  <span class="description">          The email of the user.
-</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <span class="name">attributes[password]</span>
-                </td>
-                <td>
-                  <span class="description">          The password of the user.
+                  <span class="description">          The keyword of the vute.
 </span>
                 </td>
               </tr>
@@ -164,15 +146,14 @@ table th, table td {
           <h3>Request</h3>
 
             <h4>Headers</h4>
-            <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3</pre>
+            <pre class="request headers">Content-Type: application/vnd.api+json</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">POST /api/v1/users</pre>
+          <pre class="request route highlight">POST /api/v1/vutes</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"users","attributes":{"name":"Frida Prohaska","email":"reese_goodwin@rath.biz","password":"rpsmdkdky"}}}</pre>
+            <pre class="request body">{"data":{"type":"vutes","attributes":{"keyword":"The FTP sensor is down, calculate the back-end interface so we can back up the AGP card!"}}}</pre>
 
 
             <h3>Response</h3>
@@ -181,7 +162,7 @@ Authorization: Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa1
             <h4>Status</h4>
             <pre class="response status">201 Created</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;609&quot;,&quot;type&quot;:&quot;users&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/609&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-19T14:08:55.358Z&quot;,&quot;updated-at&quot;:&quot;2015-08-19T14:08:55.358Z&quot;,&quot;name&quot;:&quot;Frida Prohaska&quot;,&quot;email&quot;:&quot;reese_goodwin@rath.biz&quot;,&quot;password&quot;:&quot;rpsmdkdky&quot;},&quot;relationships&quot;:{&quot;vutes&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/609/relationships/vutes&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/users/609/vutes&quot;}}}}}</pre>
+              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;20&quot;,&quot;type&quot;:&quot;vutes&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/20&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-19T14:08:55.304Z&quot;,&quot;updated-at&quot;:&quot;2015-08-19T14:08:55.304Z&quot;,&quot;keyword&quot;:&quot;The FTP sensor is down, calculate the back-end interface so we can back up the AGP card!&quot;},&quot;relationships&quot;:{&quot;user&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/20/relationships/user&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/vutes/20/user&quot;}}}}}</pre>
       </div>
     </div>
   </body>

@@ -1,0 +1,22 @@
+Create a vute
+-------------
+
+Parameters:
+  * type -           Should always be set to <code>vutes</code>.
+
+  * keyword -           The keyword of the vute.
+
+
+Request:
+  POST /api/v1/vutes
+  Content-Type: application/vnd.api+json
+
+  {"data":{"type":"vutes","attributes":{"keyword":"The FTP sensor is down, calculate the back-end interface so we can back up the AGP card!"}}}
+
+Response:
+  Status: 201 Created
+  Content-Type: application/vnd.api+json
+
+  {"data":{"id":"20","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/20"},"attributes":{"created-at":"2015-08-19T14:08:55.304Z","updated-at":"2015-08-19T14:08:55.304Z","keyword":"The FTP sensor is down, calculate the back-end interface so we can back up the AGP card!"},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/20/relationships/user","related":"http://example.org/api/v1/vutes/20/user"}}}}}
+
+

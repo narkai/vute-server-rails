@@ -1,0 +1,22 @@
+Get access token
+----------------
+
+Parameters:
+  * grant_type -           Should always be set to <code>password</code>.
+
+  * email -           The email of the user.
+
+  * password -           The password of the user.
+
+
+Request:
+  POST /oauth/token
+  Content-Type: application/json
+
+  {"grant_type":"password","email":"janis@padberg.biz","password":"7dehro5dn"}
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {"access_token":"b68ebe97afe0df4ed07c352009a37782038a5655ab49e3120ffefcb8a1ed2946","token_type":"bearer","expires_in":7200,"created_at":1439993335}
