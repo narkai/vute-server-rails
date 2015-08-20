@@ -1,11 +1,15 @@
 {
-  "resource": "Users",
+  "resource": "Vutes",
   "http_method": "DELETE",
-  "route": "/api/v1/users/:id",
-  "description": "Deleting a user",
+  "route": "/api/v1/vutes/:id",
+  "description": "Deleting a vute",
   "explanation": null,
   "parameters": [
-
+    {
+      "required": true,
+      "name": "id",
+      "description": "          The id of the vute.\n"
+    }
   ],
   "response_fields": [
 
@@ -13,11 +17,11 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/api/v1/users/234",
+      "request_path": "/api/v1/vutes/51",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer b152abfed9d31a71d55070ea624785cd1c051183ce4fd843a88ad32378c8999e"
+        "Authorization": "Bearer f576c416ce7529c9e004c08a939ab41b4cf933a2e0f39c2901773c2b30d3d11e"
       },
       "request_query_parameters": {
       },

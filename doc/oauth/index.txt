@@ -13,10 +13,10 @@ Request:
   POST /oauth/token
   Content-Type: application/json
 
-  {"grant_type":"password","email":"janis@padberg.biz","password":"7dehro5dn"}
+  {"grant_type":"password","email":"reymundo@collinsgleason.net","password":"wf97s3uo5"}
 
 Response:
   Status: 200 OK
   Content-Type: application/json; charset=utf-8
 
-  {"access_token":"b68ebe97afe0df4ed07c352009a37782038a5655ab49e3120ffefcb8a1ed2946","token_type":"bearer","expires_in":7200,"created_at":1439993335}
+  {"access_token":"ba7b8da0f7ab498b2bd17a8cdcde4ffffcf40fc743a451018fe57b28b9f55ea8","token_type":"bearer","expires_in":7200,"created_at":1440059533}

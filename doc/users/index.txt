@@ -6,42 +6,28 @@ Parameters:
 
 
 Request:
-  GET /api/v1/users/608
-  Authorization: Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3
+  GET /api/v1/users/233
+  Authorization: Bearer b05c5dabf6321d879eac13419d5cc3d6d7a37e76fe931390bb973222f18a4bb2
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"608","type":"users","links":{"self":"http://example.org/api/v1/users/608"},"attributes":{"created-at":"2015-08-19T14:08:55.316Z","updated-at":"2015-08-19T14:08:55.316Z","name":"Wilhelm Streich Sr.","email":"janis@padberg.biz","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/608/relationships/vutes","related":"http://example.org/api/v1/users/608/vutes"}}}}}
+  {"data":{"id":"233","type":"users","links":{"self":"http://example.org/api/v1/users/233"},"attributes":{"created-at":"2015-08-20T08:32:12.796Z","updated-at":"2015-08-20T08:32:12.796Z","name":"Adrienne Beier III","email":"reymundo@collinsgleason.net","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/233/relationships/vutes","related":"http://example.org/api/v1/users/233/vutes"}}}}}
 
 
-Create a user
--------------
-
-Parameters:
-  * type -           Should always be set to <code>users</code>.
-
-  * name -           The name of the user.
-
-  * email -           The email of the user.
-
-  * password -           The password of the user.
-
+Deleting a user
+---------------
 
 Request:
-  POST /api/v1/users
-  Authorization: Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3
+  DELETE /api/v1/users/234
+  Authorization: Bearer b152abfed9d31a71d55070ea624785cd1c051183ce4fd843a88ad32378c8999e
   Content-Type: application/vnd.api+json
-
-  {"data":{"type":"users","attributes":{"name":"Frida Prohaska","email":"reese_goodwin@rath.biz","password":"rpsmdkdky"}}}
 
 Response:
-  Status: 201 Created
-  Content-Type: application/vnd.api+json
+  Status: 204 No Content
 
-  {"data":{"id":"609","type":"users","links":{"self":"http://example.org/api/v1/users/609"},"attributes":{"created-at":"2015-08-19T14:08:55.358Z","updated-at":"2015-08-19T14:08:55.358Z","name":"Frida Prohaska","email":"reese_goodwin@rath.biz","password":"rpsmdkdky"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/609/relationships/vutes","related":"http://example.org/api/v1/users/609/vutes"}}}}}
 
 
 Updating a user
@@ -60,21 +46,21 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/users/610
-  Authorization: Bearer 6fb11fea65e25c2825f2d68a17db76e448dafd015da55722531c479f6613a8e8
+  PATCH /api/v1/users/235
+  Authorization: Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c48195f318a
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","id":"610","attributes":{"name":"Kiara Runte"}}}
+  {"data":{"type":"users","id":"235","attributes":{"name":"Maymie Wisoky"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"610","type":"users","links":{"self":"http://example.org/api/v1/users/610"},"attributes":{"created-at":"2015-08-19T14:08:55.365Z","updated-at":"2015-08-19T14:08:55.375Z","name":"Kiara Runte","email":"janis@padberg.biz","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/610/relationships/vutes","related":"http://example.org/api/v1/users/610/vutes"}}}}}
+  {"data":{"id":"235","type":"users","links":{"self":"http://example.org/api/v1/users/235"},"attributes":{"created-at":"2015-08-20T08:32:12.869Z","updated-at":"2015-08-20T08:32:12.879Z","name":"Maymie Wisoky","email":"reymundo@collinsgleason.net","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/235/relationships/vutes","related":"http://example.org/api/v1/users/235/vutes"}}}}}
 
 
-Create a user and receive an error
-----------------------------------
+Create a user
+-------------
 
 Parameters:
   * type -           Should always be set to <code>users</code>.
@@ -88,28 +74,15 @@ Parameters:
 
 Request:
   POST /api/v1/users
-  Authorization: Bearer 6fb11fea65e25c2825f2d68a17db76e448dafd015da55722531c479f6613a8e8
+  Authorization: Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c48195f318a
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","attributes":{"name":null,"email":"waldo@schiller.info","password":"t62bqrljt"}}}
+  {"data":{"type":"users","attributes":{"name":"Scotty Hegmann","email":"roselyn_mosciski@veum.com","password":"kv122w9y1"}}}
 
 Response:
-  Status: 422 Unprocessable Entity
+  Status: 201 Created
   Content-Type: application/vnd.api+json
 
-  {"errors":[{"title":"can't be blank","detail":"name - can't be blank","id":null,"href":null,"code":100,"source":{"pointer":"/data/attributes/name"},"links":null,"status":"unprocessable_entity"}]}
-
-
-Deleting a user
----------------
-
-Request:
-  DELETE /api/v1/users/611
-  Authorization: Bearer eb7822c1f0e00702e37cb8f9416d0721ad2111413382cd8345ad6d04513406c8
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 204 No Content
-
+  {"data":{"id":"236","type":"users","links":{"self":"http://example.org/api/v1/users/236"},"attributes":{"created-at":"2015-08-20T08:32:12.889Z","updated-at":"2015-08-20T08:32:12.889Z","name":"Scotty Hegmann","email":"roselyn_mosciski@veum.com","password":"kv122w9y1"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/236/relationships/vutes","related":"http://example.org/api/v1/users/236/vutes"}}}}}
 
 

@@ -30,7 +30,8 @@ module Api
 
         let(:raw_post) { params.to_json }
 
-        example_request "Get access token" do
+        example "Get access token" do
+          do_request
           explanation "By resource owner client credentials flow"
           expect(status).to eq 200
         end

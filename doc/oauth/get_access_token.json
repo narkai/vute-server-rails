@@ -28,7 +28,7 @@
     {
       "request_method": "POST",
       "request_path": "/oauth/token",
-      "request_body": "{\"grant_type\":\"password\",\"email\":\"janis@padberg.biz\",\"password\":\"7dehro5dn\"}",
+      "request_body": "{\"grant_type\":\"password\",\"email\":\"reymundo@collinsgleason.net\",\"password\":\"wf97s3uo5\"}",
       "request_headers": {
         "Content-Type": "application/json"
       },
@@ -37,7 +37,7 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"access_token\":\"b68ebe97afe0df4ed07c352009a37782038a5655ab49e3120ffefcb8a1ed2946\",\"token_type\":\"bearer\",\"expires_in\":7200,\"created_at\":1439993335}",
+      "response_body": "{\"access_token\":\"ba7b8da0f7ab498b2bd17a8cdcde4ffffcf40fc743a451018fe57b28b9f55ea8\",\"token_type\":\"bearer\",\"expires_in\":7200,\"created_at\":1440059533}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },

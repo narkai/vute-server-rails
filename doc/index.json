@@ -19,11 +19,6 @@
           "groups": "all"
         },
         {
-          "description": "Create a user and receive an error",
-          "link": "users/create_a_user_and_receive_an_error.json",
-          "groups": "all"
-        },
-        {
           "description": "Deleting a user",
           "link": "users/deleting_a_user.json",
           "groups": "all"
@@ -46,6 +41,26 @@
         {
           "description": "Create a vute",
           "link": "vutes/create_a_vute.json",
+          "groups": "all"
+        },
+        {
+          "description": "Deleting a vute",
+          "link": "vutes/deleting_a_vute.json",
+          "groups": "all"
+        },
+        {
+          "description": "Get vute by id",
+          "link": "vutes/get_vute_by_id.json",
+          "groups": "all"
+        },
+        {
+          "description": "List vutes",
+          "link": "vutes/list_vutes.json",
+          "groups": "all"
+        },
+        {
+          "description": "Updating a vute",
+          "link": "vutes/updating_a_vute.json",
           "groups": "all"
         }
       ]

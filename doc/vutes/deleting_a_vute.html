@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Users API</title>
+    <title>Vutes API</title>
     <meta charset="utf-8">
     <style>
       
@@ -106,11 +106,11 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>Users API</h1>
+      <h1>Vutes API</h1>
 
       <div class="article">
-        <h2>Create a user and receive an error</h2>
-        <h3>POST /api/v1/users</h3>
+        <h2>Deleting a vute</h2>
+        <h3>DELETE /api/v1/vutes/:id</h3>
 
           <h3>Parameters</h3>
           <table class="parameters table table-striped table-bordered table-condensed">
@@ -123,37 +123,10 @@ table th, table td {
             <tbody>
               <tr>
                 <td class="required">
-                    <span class="name">type</span>
+                    <span class="name">id</span>
                 </td>
                 <td>
-                  <span class="description">          Should always be set to &lt;code&gt;users&lt;/code&gt;.
-</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <span class="name">attributes[name]</span>
-                </td>
-                <td>
-                  <span class="description">          The name of the user.
-</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <span class="name">attributes[email]</span>
-                </td>
-                <td>
-                  <span class="description">          The email of the user.
-</span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                    <span class="name">attributes[password]</span>
-                </td>
-                <td>
-                  <span class="description">          The password of the user.
+                  <span class="description">          The id of the vute.
 </span>
                 </td>
               </tr>
@@ -165,23 +138,17 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer 6fb11fea65e25c2825f2d68a17db76e448dafd015da55722531c479f6613a8e8</pre>
+Authorization: Bearer f576c416ce7529c9e004c08a939ab41b4cf933a2e0f39c2901773c2b30d3d11e</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">POST /api/v1/users</pre>
+          <pre class="request route highlight">DELETE /api/v1/vutes/51</pre>
 
 
-            <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"users","attributes":{"name":null,"email":"waldo@schiller.info","password":"t62bqrljt"}}}</pre>
 
 
             <h3>Response</h3>
-              <h4>Headers</h4>
-              <pre class="response headers">Content-Type: application/vnd.api+json</pre>
             <h4>Status</h4>
-            <pre class="response status">422 Unprocessable Entity</pre>
-              <h4>Body</h4>
-              <pre class="response body">{&quot;errors&quot;:[{&quot;title&quot;:&quot;can&#39;t be blank&quot;,&quot;detail&quot;:&quot;name - can&#39;t be blank&quot;,&quot;id&quot;:null,&quot;href&quot;:null,&quot;code&quot;:100,&quot;source&quot;:{&quot;pointer&quot;:&quot;/data/attributes/name&quot;},&quot;links&quot;:null,&quot;status&quot;:&quot;unprocessable_entity&quot;}]}</pre>
+            <pre class="response status">204 No Content</pre>
       </div>
     </div>
   </body>

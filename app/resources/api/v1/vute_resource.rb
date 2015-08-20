@@ -2,7 +2,7 @@ module Api
   module V1
     class VuteResource < BaseResource
 
-    	attributes :keyword
+    	attributes :keyword, :user_id
 
       has_one :user
       before_save :set_user

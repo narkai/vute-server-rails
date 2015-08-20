@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Users API</title>
+    <title>Vutes API</title>
     <meta charset="utf-8">
     <style>
       
@@ -106,42 +106,22 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>Users API</h1>
+      <h1>Vutes API</h1>
 
       <div class="article">
-        <h2>Get user by id</h2>
-        <h3>GET /api/v1/users/:id</h3>
+        <h2>List vutes</h2>
+        <h3>GET /api/v1/vutes</h3>
 
-          <h3>Parameters</h3>
-          <table class="parameters table table-striped table-bordered table-condensed">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="required">
-                    <span class="name">id</span>
-                </td>
-                <td>
-                  <span class="description">          ID of the user to be retrieved.
-</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
 
           <h3>Request</h3>
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer b05c5dabf6321d879eac13419d5cc3d6d7a37e76fe931390bb973222f18a4bb2</pre>
+Authorization: Bearer 6f5c06f679fff6b6b2957bd1c30822b30051f5a23d7ad3092ef7e1581b86f626</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">GET /api/v1/users/233</pre>
+          <pre class="request route highlight">GET /api/v1/vutes</pre>
 
 
 
@@ -152,7 +132,7 @@ Authorization: Bearer b05c5dabf6321d879eac13419d5cc3d6d7a37e76fe931390bb973222f1
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;233&quot;,&quot;type&quot;:&quot;users&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/233&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-20T08:32:12.796Z&quot;,&quot;updated-at&quot;:&quot;2015-08-20T08:32:12.796Z&quot;,&quot;name&quot;:&quot;Adrienne Beier III&quot;,&quot;email&quot;:&quot;reymundo@collinsgleason.net&quot;,&quot;password&quot;:null},&quot;relationships&quot;:{&quot;vutes&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/233/relationships/vutes&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/users/233/vutes&quot;}}}}}</pre>
+              <pre class="response body">{&quot;data&quot;:[{&quot;id&quot;:&quot;46&quot;,&quot;type&quot;:&quot;vutes&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/46&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-20T08:32:12.903Z&quot;,&quot;updated-at&quot;:&quot;2015-08-20T08:32:12.903Z&quot;,&quot;keyword&quot;:&quot;Try to parse the SQL interface, maybe it will generate the back-end program!&quot;,&quot;user-id&quot;:237},&quot;relationships&quot;:{&quot;user&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/46/relationships/user&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/vutes/46/user&quot;}}}},{&quot;id&quot;:&quot;47&quot;,&quot;type&quot;:&quot;vutes&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/47&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-20T08:32:12.907Z&quot;,&quot;updated-at&quot;:&quot;2015-08-20T08:32:12.907Z&quot;,&quot;keyword&quot;:&quot;Try to copy the IB application, maybe it will generate the optical monitor!&quot;,&quot;user-id&quot;:237},&quot;relationships&quot;:{&quot;user&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/47/relationships/user&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/vutes/47/user&quot;}}}}],&quot;meta&quot;:{&quot;record-count&quot;:2},&quot;links&quot;:{&quot;first&quot;:&quot;http://example.org/api/v1/vutes?page%5Blimit%5D=10\u0026page%5Boffset%5D=0&quot;,&quot;last&quot;:&quot;http://example.org/api/v1/vutes?page%5Blimit%5D=10\u0026page%5Boffset%5D=0&quot;}}</pre>
       </div>
     </div>
   </body>

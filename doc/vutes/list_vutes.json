@@ -1,0 +1,35 @@
+{
+  "resource": "Vutes",
+  "http_method": "GET",
+  "route": "/api/v1/vutes",
+  "description": "List vutes",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/vutes",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/vnd.api+json",
+        "Authorization": "Bearer 6f5c06f679fff6b6b2957bd1c30822b30051f5a23d7ad3092ef7e1581b86f626"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/vnd.api+json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\"data\":[{\"id\":\"46\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/46\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.903Z\",\"updated-at\":\"2015-08-20T08:32:12.903Z\",\"keyword\":\"Try to parse the SQL interface, maybe it will generate the back-end program!\",\"user-id\":237},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/46/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/46/user\"}}}},{\"id\":\"47\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/47\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.907Z\",\"updated-at\":\"2015-08-20T08:32:12.907Z\",\"keyword\":\"Try to copy the IB application, maybe it will generate the optical monitor!\",\"user-id\":237},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/47/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/47/user\"}}}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=10\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=10\\u0026page%5Boffset%5D=0\"}}",
+      "response_headers": {
+        "Content-Type": "application/vnd.api+json"
+      },
+      "response_content_type": "application/vnd.api+json",
+      "curl": null
+    }
+  ]
+}

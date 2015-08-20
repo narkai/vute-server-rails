@@ -17,18 +17,18 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/users/608",
+      "request_path": "/api/v1/users/233",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3"
+        "Authorization": "Bearer b05c5dabf6321d879eac13419d5cc3d6d7a37e76fe931390bb973222f18a4bb2"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"608\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/608\"},\"attributes\":{\"created-at\":\"2015-08-19T14:08:55.316Z\",\"updated-at\":\"2015-08-19T14:08:55.316Z\",\"name\":\"Wilhelm Streich Sr.\",\"email\":\"janis@padberg.biz\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/608/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/608/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"233\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/233\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.796Z\",\"updated-at\":\"2015-08-20T08:32:12.796Z\",\"name\":\"Adrienne Beier III\",\"email\":\"reymundo@collinsgleason.net\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/233/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/233/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

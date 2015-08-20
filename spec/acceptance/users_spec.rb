@@ -38,30 +38,30 @@ module Api
 
       #
 
-      post "/api/v1/users" do
-        parameter :type, <<-DESC, required: true
-          Should always be set to <code>users</code>.
-        DESC
-        parameter :name, <<-DESC, scope: :attributes, require: true
-          The name of the user.
-        DESC
-        parameter :email, <<-DESC, scope: :attributes, require: true
-          The email of the user.
-        DESC
-        parameter :password, <<-DESC, scope: :attributes, require: true
-          The password of the user.
-        DESC
-
-        let(:type) { :users }
-        let(:name) { nil }
-        let(:email) { Faker::Internet.email }
-        let(:password) { Faker::Internet.password(8) }
-
-        example "Create a user and receive an error" do
-          do_request
-          expect(status).to eq 422
-        end
-      end
+      # post "/api/v1/users" do
+      #   parameter :type, <<-DESC, required: true
+      #     Should always be set to <code>users</code>.
+      #   DESC
+      #   parameter :name, <<-DESC, scope: :attributes, require: true
+      #     The name of the user.
+      #   DESC
+      #   parameter :email, <<-DESC, scope: :attributes, require: true
+      #     The email of the user.
+      #   DESC
+      #   parameter :password, <<-DESC, scope: :attributes, require: true
+      #     The password of the user.
+      #   DESC
+      #
+      #   let(:type) { :users }
+      #   let(:name) { nil }
+      #   let(:email) { Faker::Internet.email }
+      #   let(:password) { Faker::Internet.password(8) }
+      #
+      #   example "Create a user and receive an error" do
+      #     do_request
+      #     expect(status).to eq 422
+      #   end
+      # end
 
       #
 

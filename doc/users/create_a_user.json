@@ -36,17 +36,17 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/users",
-      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Frida Prohaska\",\"email\":\"reese_goodwin@rath.biz\",\"password\":\"rpsmdkdky\"}}}",
+      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Scotty Hegmann\",\"email\":\"roselyn_mosciski@veum.com\",\"password\":\"kv122w9y1\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 4ad0d3ed952040aa5bd68c490a54031438003da497fa97b8f6eef34fa16e18e3"
+        "Authorization": "Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c48195f318a"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"609\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/609\"},\"attributes\":{\"created-at\":\"2015-08-19T14:08:55.358Z\",\"updated-at\":\"2015-08-19T14:08:55.358Z\",\"name\":\"Frida Prohaska\",\"email\":\"reese_goodwin@rath.biz\",\"password\":\"rpsmdkdky\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/609/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/609/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"236\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/236\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.889Z\",\"updated-at\":\"2015-08-20T08:32:12.889Z\",\"name\":\"Scotty Hegmann\",\"email\":\"roselyn_mosciski@veum.com\",\"password\":\"kv122w9y1\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/236/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/236/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },

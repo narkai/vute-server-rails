@@ -1,7 +1,8 @@
 class Vute < ActiveRecord::Base
 
-  belongs_to :user
-
   validates :keyword, presence: true
+
+  belongs_to :user
+  validates :user_id, presence: true
 
 end
