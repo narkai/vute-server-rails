@@ -29,6 +29,9 @@ Rails.application.configure do
   #K
   # config.log_level = :info
 
+  #K
+  config.assets.debug = false
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
