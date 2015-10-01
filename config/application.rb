@@ -48,5 +48,10 @@ module VuteServer
     #   end
     # end
 
+    #K
+    config.assets.enabled = false
+    config.serve_static_files = false
+    config.assets.compile = false
+
   end
 end
