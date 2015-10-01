@@ -3,8 +3,13 @@ module Api
 
     class UsersController < ApiController
 
+      # before_action :doorkeeper_authorize!, :except => [:create, :index, :show, :update, :destroy]
+      # before_action :ensure_current_user_is_resource_owner, :except => [:create, :index, :show, :update, :destroy]
+      # before_action :ensure_current_user_is_resource_owner, :except => [:create, :index]
+
       before_action :doorkeeper_authorize!, except: :create
       before_action :ensure_current_user_is_resource_owner, except: :create
+
       # before_action(except: %i[create]) { doorkeeper_authorize! }
       # before_action(except: %i[create]) { ensure_current_user_is_resource_owner }
 

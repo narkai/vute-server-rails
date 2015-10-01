@@ -7,10 +7,13 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'doorkeeper'
 
 gem "jsonapi-resources", git: "https://github.com/cerebris/jsonapi-resources", branch: "master"
+
 gem 'rspec_api_documentation'
 gem "apitome"
 gem 'rspec-rails', '~> 3.0'
 gem "spring-commands-rspec", platform: :ruby
+
+gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
 
