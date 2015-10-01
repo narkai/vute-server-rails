@@ -1,0 +1,7 @@
+{
+  "name": "Vute Server",
+  "description": "A minimal API for personal development.",
+  "repository": "https://github.com/vuteOrg/server",
+  "logo": "https://github.com/vuteOrg/server/tree/master/public/vute_logo_grey.jpg",
+  "keywords": ["vute", "rails"]
+}
