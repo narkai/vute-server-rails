@@ -27,7 +27,7 @@ Rails.application.configure do
   config.serve_static_files = false
 
   #K
-  config.log_level = :info
+  # config.log_level = :info
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
