@@ -156,15 +156,20 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer 7783ec79627db401a68b2b9e7c2fe89058d171514f1c99876d6b1dc6d0ea421f</pre>
+Authorization: Bearer cb83498d621b749512596a210fb8c31eb9c1c1dec00b37307caa142fd37a2209</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">PATCH /api/v1/vutes/48</pre>
+          <pre class="request route highlight">PATCH /api/v1/vutes/239</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"vutes","id":"48","attributes":{"keyword":"The RAM panel is down, program the solid state sensor so we can hack the EXE circuit!"}}}</pre>
+            <pre class="request body">{"data":{"type":"vutes","id":"239","attributes":{"keyword":"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!"}}}</pre>
 
+            <h4>cURL</h4>
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/vutes/239&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;vutes&quot;,&quot;id&quot;:&quot;239&quot;,&quot;attributes&quot;:{&quot;keyword&quot;:&quot;If we override the driver, we can get to the IB protocol through the solid state SDD circuit!&quot;}}}&#39; -X PATCH \
+	-H &quot;Content-Type: application/vnd.api+json&quot; \
+	-H &quot;Accept: application/vnd.api+json&quot; \
+	-H &quot;Authorization: Bearer cb83498d621b749512596a210fb8c31eb9c1c1dec00b37307caa142fd37a2209&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -172,7 +177,7 @@ Authorization: Bearer 7783ec79627db401a68b2b9e7c2fe89058d171514f1c99876d6b1dc6d0
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;48&quot;,&quot;type&quot;:&quot;vutes&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/48&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-20T08:32:12.935Z&quot;,&quot;updated-at&quot;:&quot;2015-08-20T08:32:12.942Z&quot;,&quot;keyword&quot;:&quot;The RAM panel is down, program the solid state sensor so we can hack the EXE circuit!&quot;,&quot;user-id&quot;:238},&quot;relationships&quot;:{&quot;user&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/48/relationships/user&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/vutes/48/user&quot;}}}}}</pre>
+              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;239&quot;,&quot;type&quot;:&quot;vutes&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/239&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-10-27T02:10:10.412Z&quot;,&quot;updated-at&quot;:&quot;2015-10-27T02:10:10.419Z&quot;,&quot;keyword&quot;:&quot;If we override the driver, we can get to the IB protocol through the solid state SDD circuit!&quot;,&quot;user-id&quot;:437},&quot;relationships&quot;:{&quot;user&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/239/relationships/user&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/vutes/239/user&quot;}}}}}</pre>
       </div>
     </div>
   </body>

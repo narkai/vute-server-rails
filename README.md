@@ -16,5 +16,4 @@ Epfl+Ecal Lab, Cause, Thibaud-Guillaume Gentil
 
 *HEIGVD - MASRAD2* |
 *Master of advanced studies in Rapid Application Development* |
-*Volée 2* |
-*5 septembre 2015*
+*Volée 2*

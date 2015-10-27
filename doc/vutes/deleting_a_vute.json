@@ -17,11 +17,11 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/api/v1/vutes/51",
+      "request_path": "/api/v1/vutes/238",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer f576c416ce7529c9e004c08a939ab41b4cf933a2e0f39c2901773c2b30d3d11e"
+        "Authorization": "Bearer 43953917a40987de9fb608a5f608e7bbb125a12f9cf9a38914d3746e76f4cf0a"
       },
       "request_query_parameters": {
       },
@@ -32,7 +32,7 @@
       "response_headers": {
       },
       "response_content_type": null,
-      "curl": null
+      "curl": "curl \"http://localhost:3000/api/v1/vutes/238\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 43953917a40987de9fb608a5f608e7bbb125a12f9cf9a38914d3746e76f4cf0a\""
     }
   ]
 }

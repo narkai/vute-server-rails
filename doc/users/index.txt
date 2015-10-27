@@ -6,28 +6,15 @@ Parameters:
 
 
 Request:
-  GET /api/v1/users/233
-  Authorization: Bearer b05c5dabf6321d879eac13419d5cc3d6d7a37e76fe931390bb973222f18a4bb2
+  GET /api/v1/users/431
+  Authorization: Bearer 2257cfe9719de144c327284770243a8c8ebcef36b21cb9d682ee479319839470
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"233","type":"users","links":{"self":"http://example.org/api/v1/users/233"},"attributes":{"created-at":"2015-08-20T08:32:12.796Z","updated-at":"2015-08-20T08:32:12.796Z","name":"Adrienne Beier III","email":"reymundo@collinsgleason.net","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/233/relationships/vutes","related":"http://example.org/api/v1/users/233/vutes"}}}}}
-
-
-Deleting a user
----------------
-
-Request:
-  DELETE /api/v1/users/234
-  Authorization: Bearer b152abfed9d31a71d55070ea624785cd1c051183ce4fd843a88ad32378c8999e
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 204 No Content
-
+  {"data":{"id":"431","type":"users","links":{"self":"http://example.org/api/v1/users/431"},"attributes":{"created-at":"2015-10-27T02:10:10.273Z","updated-at":"2015-10-27T02:10:10.273Z","name":"Hilma Raynor","email":"kennith.friesen@gerhold.co","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/431/relationships/vutes","related":"http://example.org/api/v1/users/431/vutes"}}}}}
 
 
 Updating a user
@@ -46,17 +33,30 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/users/235
-  Authorization: Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c48195f318a
+  PATCH /api/v1/users/432
+  Authorization: Bearer 20866a6ec22415fd02bcc4ada6a1a88e256cae7bc46bf766b0ee96c2bcfe7801
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","id":"235","attributes":{"name":"Maymie Wisoky"}}}
+  {"data":{"type":"users","id":"432","attributes":{"name":"Miss Conner Windler"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"235","type":"users","links":{"self":"http://example.org/api/v1/users/235"},"attributes":{"created-at":"2015-08-20T08:32:12.869Z","updated-at":"2015-08-20T08:32:12.879Z","name":"Maymie Wisoky","email":"reymundo@collinsgleason.net","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/235/relationships/vutes","related":"http://example.org/api/v1/users/235/vutes"}}}}}
+  {"data":{"id":"432","type":"users","links":{"self":"http://example.org/api/v1/users/432"},"attributes":{"created-at":"2015-10-27T02:10:10.318Z","updated-at":"2015-10-27T02:10:10.329Z","name":"Miss Conner Windler","email":"kennith.friesen@gerhold.co","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/432/relationships/vutes","related":"http://example.org/api/v1/users/432/vutes"}}}}}
+
+
+Deleting a user
+---------------
+
+Request:
+  DELETE /api/v1/users/433
+  Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 204 No Content
+
 
 
 Create a user
@@ -74,15 +74,15 @@ Parameters:
 
 Request:
   POST /api/v1/users
-  Authorization: Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c48195f318a
+  Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","attributes":{"name":"Scotty Hegmann","email":"roselyn_mosciski@veum.com","password":"kv122w9y1"}}}
+  {"data":{"type":"users","attributes":{"name":"Nathanael Stracke","email":"mercedes.ferry@wiza.net","password":"r9wqkus56"}}}
 
 Response:
   Status: 201 Created
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"236","type":"users","links":{"self":"http://example.org/api/v1/users/236"},"attributes":{"created-at":"2015-08-20T08:32:12.889Z","updated-at":"2015-08-20T08:32:12.889Z","name":"Scotty Hegmann","email":"roselyn_mosciski@veum.com","password":"kv122w9y1"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/236/relationships/vutes","related":"http://example.org/api/v1/users/236/vutes"}}}}}
+  {"data":{"id":"434","type":"users","links":{"self":"http://example.org/api/v1/users/434"},"attributes":{"created-at":"2015-10-27T02:10:10.361Z","updated-at":"2015-10-27T02:10:10.361Z","name":"Nathanael Stracke","email":"mercedes.ferry@wiza.net","password":"r9wqkus56"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/434/relationships/vutes","related":"http://example.org/api/v1/users/434/vutes"}}}}}
 
 

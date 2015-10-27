@@ -135,10 +135,10 @@ table th, table td {
               </tr>
               <tr>
                 <td class="required">
-                    <span class="name">email</span>
+                    <span class="name">username</span>
                 </td>
                 <td>
-                  <span class="description">          The email of the user.
+                  <span class="description">          The username of the user.
 </span>
                 </td>
               </tr>
@@ -165,8 +165,11 @@ table th, table td {
 
 
             <h4>Body</h4>
-            <pre class="request body">{"grant_type":"password","email":"reymundo@collinsgleason.net","password":"wf97s3uo5"}</pre>
+            <pre class="request body">{"grant_type":"password","username":"Hilma Raynor","password":"as44td3sy"}</pre>
 
+            <h4>cURL</h4>
+            <pre class="request curl">curl &quot;http://localhost:3000/oauth/token&quot; -d &#39;{&quot;grant_type&quot;:&quot;password&quot;,&quot;username&quot;:&quot;Hilma Raynor&quot;,&quot;password&quot;:&quot;as44td3sy&quot;}&#39; -X POST \
+	-H &quot;Content-Type: application/json&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -174,7 +177,12 @@ table th, table td {
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;access_token&quot;:&quot;ba7b8da0f7ab498b2bd17a8cdcde4ffffcf40fc743a451018fe57b28b9f55ea8&quot;,&quot;token_type&quot;:&quot;bearer&quot;,&quot;expires_in&quot;:7200,&quot;created_at&quot;:1440059533}</pre>
+              <pre class="response body">{
+  &quot;access_token&quot;: &quot;4731a9783df6514113600ffcd16d436d37c76e0a5506466aa0b49de0ea281542&quot;,
+  &quot;token_type&quot;: &quot;bearer&quot;,
+  &quot;expires_in&quot;: 7200,
+  &quot;created_at&quot;: 1445911810
+}</pre>
       </div>
     </div>
   </body>

@@ -6,7 +6,9 @@
         {
           "description": "Get access token",
           "link": "oauth/get_access_token.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/oauth/token",
+          "method": "post"
         }
       ]
     },
@@ -16,22 +18,30 @@
         {
           "description": "Create a user",
           "link": "users/create_a_user.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/users",
+          "method": "post"
         },
         {
           "description": "Deleting a user",
           "link": "users/deleting_a_user.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/users/:id",
+          "method": "delete"
         },
         {
           "description": "Get user by id",
           "link": "users/get_user_by_id.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/users/:id",
+          "method": "get"
         },
         {
           "description": "Updating a user",
           "link": "users/updating_a_user.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/users/:id",
+          "method": "patch"
         }
       ]
     },
@@ -41,27 +51,37 @@
         {
           "description": "Create a vute",
           "link": "vutes/create_a_vute.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/vutes",
+          "method": "post"
         },
         {
           "description": "Deleting a vute",
           "link": "vutes/deleting_a_vute.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/vutes/:id",
+          "method": "delete"
         },
         {
           "description": "Get vute by id",
           "link": "vutes/get_vute_by_id.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/vutes/:id",
+          "method": "get"
         },
         {
           "description": "List vutes",
           "link": "vutes/list_vutes.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/vutes",
+          "method": "get"
         },
         {
           "description": "Updating a vute",
           "link": "vutes/updating_a_vute.json",
-          "groups": "all"
+          "groups": "all",
+          "route": "/api/v1/vutes/:id",
+          "method": "patch"
         }
       ]
     }

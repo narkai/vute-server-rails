@@ -4,7 +4,7 @@ Get access token
 Parameters:
   * grant_type -           Should always be set to <code>password</code>.
 
-  * email -           The email of the user.
+  * username -           The username of the user.
 
   * password -           The password of the user.
 
@@ -13,10 +13,17 @@ Request:
   POST /oauth/token
   Content-Type: application/json
 
-  {"grant_type":"password","email":"reymundo@collinsgleason.net","password":"wf97s3uo5"}
+  {"grant_type":"password","username":"Hilma Raynor","password":"as44td3sy"}
 
 Response:
   Status: 200 OK
   Content-Type: application/json; charset=utf-8
 
-  {"access_token":"ba7b8da0f7ab498b2bd17a8cdcde4ffffcf40fc743a451018fe57b28b9f55ea8","token_type":"bearer","expires_in":7200,"created_at":1440059533}
+  {
+    "access_token": "4731a9783df6514113600ffcd16d436d37c76e0a5506466aa0b49de0ea281542",
+    "token_type": "bearer",
+    "expires_in": 7200,
+    "created_at": 1445911810
+  }
+
+

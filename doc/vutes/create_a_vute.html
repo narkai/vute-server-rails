@@ -147,15 +147,20 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer 1d31f4c64cd33ced572aa0c4ac2efaa3bc7c327e926725d4c617c660a16a9551</pre>
+Authorization: Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873</pre>
 
           <h4>Route</h4>
           <pre class="request route highlight">POST /api/v1/vutes</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"vutes","attributes":{"keyword":"Use the cross-platform JBOD microchip, then you can synthesize the cross-platform microchip!"}}}</pre>
+            <pre class="request body">{"data":{"type":"vutes","attributes":{"keyword":"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!"}}}</pre>
 
+            <h4>cURL</h4>
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/vutes&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;vutes&quot;,&quot;attributes&quot;:{&quot;keyword&quot;:&quot;The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!&quot;}}}&#39; -X POST \
+	-H &quot;Content-Type: application/vnd.api+json&quot; \
+	-H &quot;Accept: application/vnd.api+json&quot; \
+	-H &quot;Authorization: Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -163,7 +168,7 @@ Authorization: Bearer 1d31f4c64cd33ced572aa0c4ac2efaa3bc7c327e926725d4c617c660a1
             <h4>Status</h4>
             <pre class="response status">201 Created</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;50&quot;,&quot;type&quot;:&quot;vutes&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/50&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-20T08:32:12.975Z&quot;,&quot;updated-at&quot;:&quot;2015-08-20T08:32:12.975Z&quot;,&quot;keyword&quot;:&quot;Use the cross-platform JBOD microchip, then you can synthesize the cross-platform microchip!&quot;,&quot;user-id&quot;:240},&quot;relationships&quot;:{&quot;user&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/50/relationships/user&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/vutes/50/user&quot;}}}}}</pre>
+              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;242&quot;,&quot;type&quot;:&quot;vutes&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/242&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-10-27T02:10:10.465Z&quot;,&quot;updated-at&quot;:&quot;2015-10-27T02:10:10.465Z&quot;,&quot;keyword&quot;:&quot;The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!&quot;,&quot;user-id&quot;:439},&quot;relationships&quot;:{&quot;user&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/vutes/242/relationships/user&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/vutes/242/user&quot;}}}}}</pre>
       </div>
     </div>
   </body>

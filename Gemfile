@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.3'
 gem 'pg'
 
-# gem 'jquery-rails'
-# gem 'turbolinks'
-
 gem 'bcrypt', '~> 3.1.7'
 gem 'doorkeeper'
 

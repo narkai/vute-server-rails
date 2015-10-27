@@ -24,22 +24,22 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/vutes",
-      "request_body": "{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"Use the cross-platform JBOD microchip, then you can synthesize the cross-platform microchip!\"}}}",
+      "request_body": "{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 1d31f4c64cd33ced572aa0c4ac2efaa3bc7c327e926725d4c617c660a16a9551"
+        "Authorization": "Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"50\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/50\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.975Z\",\"updated-at\":\"2015-08-20T08:32:12.975Z\",\"keyword\":\"Use the cross-platform JBOD microchip, then you can synthesize the cross-platform microchip!\",\"user-id\":240},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/50/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/50/user\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"242\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/242\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.465Z\",\"updated-at\":\"2015-10-27T02:10:10.465Z\",\"keyword\":\"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!\",\"user-id\":439},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/242/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/242/user\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": null
+      "curl": "curl \"http://localhost:3000/api/v1/vutes\" -d '{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873\""
     }
   ]
 }

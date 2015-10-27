@@ -13,8 +13,8 @@ module Api
         parameter :grant_type, <<-DESC, required: true
           Should always be set to <code>password</code>.
         DESC
-        parameter :email, <<-DESC, required: true
-          The email of the user.
+        parameter :username, <<-DESC, required: true
+          The username of the user.
         DESC
         parameter :password, <<-DESC, required: true
           The password of the user.
@@ -25,7 +25,7 @@ module Api
         end
 
         let(:grant_type) { "password" }
-        let(:email) { user.email }
+        let(:username) { user.name }
         let(:password) { user.password }
 
         let(:raw_post) { params.to_json }

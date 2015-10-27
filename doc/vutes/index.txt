@@ -1,16 +1,18 @@
-List vutes
-----------
+Deleting a vute
+---------------
+
+Parameters:
+  * id -           The id of the vute.
+
 
 Request:
-  GET /api/v1/vutes
-  Authorization: Bearer 6f5c06f679fff6b6b2957bd1c30822b30051f5a23d7ad3092ef7e1581b86f626
+  DELETE /api/v1/vutes/238
+  Authorization: Bearer 43953917a40987de9fb608a5f608e7bbb125a12f9cf9a38914d3746e76f4cf0a
   Content-Type: application/vnd.api+json
 
 Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
+  Status: 204 No Content
 
-  {"data":[{"id":"46","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/46"},"attributes":{"created-at":"2015-08-20T08:32:12.903Z","updated-at":"2015-08-20T08:32:12.903Z","keyword":"Try to parse the SQL interface, maybe it will generate the back-end program!","user-id":237},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/46/relationships/user","related":"http://example.org/api/v1/vutes/46/user"}}}},{"id":"47","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/47"},"attributes":{"created-at":"2015-08-20T08:32:12.907Z","updated-at":"2015-08-20T08:32:12.907Z","keyword":"Try to copy the IB application, maybe it will generate the optical monitor!","user-id":237},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/47/relationships/user","related":"http://example.org/api/v1/vutes/47/user"}}}}],"meta":{"record-count":2},"links":{"first":"http://example.org/api/v1/vutes?page%5Blimit%5D=10\u0026page%5Boffset%5D=0","last":"http://example.org/api/v1/vutes?page%5Blimit%5D=10\u0026page%5Boffset%5D=0"}}
 
 
 Updating a vute
@@ -25,36 +27,32 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/vutes/48
-  Authorization: Bearer 7783ec79627db401a68b2b9e7c2fe89058d171514f1c99876d6b1dc6d0ea421f
+  PATCH /api/v1/vutes/239
+  Authorization: Bearer cb83498d621b749512596a210fb8c31eb9c1c1dec00b37307caa142fd37a2209
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"vutes","id":"48","attributes":{"keyword":"The RAM panel is down, program the solid state sensor so we can hack the EXE circuit!"}}}
+  {"data":{"type":"vutes","id":"239","attributes":{"keyword":"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"48","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/48"},"attributes":{"created-at":"2015-08-20T08:32:12.935Z","updated-at":"2015-08-20T08:32:12.942Z","keyword":"The RAM panel is down, program the solid state sensor so we can hack the EXE circuit!","user-id":238},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/48/relationships/user","related":"http://example.org/api/v1/vutes/48/user"}}}}}
+  {"data":{"id":"239","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/239"},"attributes":{"created-at":"2015-10-27T02:10:10.412Z","updated-at":"2015-10-27T02:10:10.419Z","keyword":"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!","user-id":437},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/239/relationships/user","related":"http://example.org/api/v1/vutes/239/user"}}}}}
 
 
-Get vute by id
---------------
-
-Parameters:
-  * id -           ID of the vute to be retrieved.
-
+List vutes
+----------
 
 Request:
-  GET /api/v1/vutes/49
-  Authorization: Bearer 7193d7dd9a87a201070ae31d2a49b90ba160d5aeba85e6664c98d2fe95587153
+  GET /api/v1/vutes
+  Authorization: Bearer 27420d8f0647e9846837e9adcf9d9f86bc0e131e49d2f493331d5b9a47df7270
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"49","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/49"},"attributes":{"created-at":"2015-08-20T08:32:12.953Z","updated-at":"2015-08-20T08:32:12.953Z","keyword":"I'll compress the redundant SAS port, that should bus the SMTP port!","user-id":232},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/49/relationships/user","related":"http://example.org/api/v1/vutes/49/user"}}}}}
+  {"data":[{"id":"240","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/240"},"attributes":{"created-at":"2015-10-27T02:10:10.432Z","updated-at":"2015-10-27T02:10:10.432Z","keyword":"Use the open-source RAM bandwidth, then you can input the optical monitor!","user-id":438},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/240/relationships/user","related":"http://example.org/api/v1/vutes/240/user"}}}},{"id":"241","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/241"},"attributes":{"created-at":"2015-10-27T02:10:10.436Z","updated-at":"2015-10-27T02:10:10.436Z","keyword":"I'll hack the optical USB interface, that should pixel the USB feed!","user-id":438},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/241/relationships/user","related":"http://example.org/api/v1/vutes/241/user"}}}}],"meta":{"record-count":2},"links":{"first":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0","last":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0"}}
 
 
 Create a vute
@@ -68,32 +66,32 @@ Parameters:
 
 Request:
   POST /api/v1/vutes
-  Authorization: Bearer 1d31f4c64cd33ced572aa0c4ac2efaa3bc7c327e926725d4c617c660a16a9551
+  Authorization: Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"vutes","attributes":{"keyword":"Use the cross-platform JBOD microchip, then you can synthesize the cross-platform microchip!"}}}
+  {"data":{"type":"vutes","attributes":{"keyword":"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!"}}}
 
 Response:
   Status: 201 Created
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"50","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/50"},"attributes":{"created-at":"2015-08-20T08:32:12.975Z","updated-at":"2015-08-20T08:32:12.975Z","keyword":"Use the cross-platform JBOD microchip, then you can synthesize the cross-platform microchip!","user-id":240},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/50/relationships/user","related":"http://example.org/api/v1/vutes/50/user"}}}}}
+  {"data":{"id":"242","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/242"},"attributes":{"created-at":"2015-10-27T02:10:10.465Z","updated-at":"2015-10-27T02:10:10.465Z","keyword":"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!","user-id":439},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/242/relationships/user","related":"http://example.org/api/v1/vutes/242/user"}}}}}
 
 
-Deleting a vute
----------------
+Get vute by id
+--------------
 
 Parameters:
-  * id -           The id of the vute.
+  * id -           ID of the vute to be retrieved.
 
 
 Request:
-  DELETE /api/v1/vutes/51
-  Authorization: Bearer f576c416ce7529c9e004c08a939ab41b4cf933a2e0f39c2901773c2b30d3d11e
+  GET /api/v1/vutes/243
+  Authorization: Bearer 29ed00c163118e81d442dae53d44146a47c9d1ea0a9cf8ab09cbf7b7ca1883f2
   Content-Type: application/vnd.api+json
 
 Response:
-  Status: 204 No Content
+  Status: 200 OK
+  Content-Type: application/vnd.api+json
 
-
-
+  {"data":{"id":"243","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/243"},"attributes":{"created-at":"2015-10-27T02:10:10.478Z","updated-at":"2015-10-27T02:10:10.478Z","keyword":"Try to bypass the GB alarm, maybe it will copy the redundant hard drive!","user-id":440},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/243/relationships/user","related":"http://example.org/api/v1/vutes/243/user"}}}}}

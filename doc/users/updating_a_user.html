@@ -174,15 +174,20 @@ table th, table td {
 
             <h4>Headers</h4>
             <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c48195f318a</pre>
+Authorization: Bearer 20866a6ec22415fd02bcc4ada6a1a88e256cae7bc46bf766b0ee96c2bcfe7801</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">PATCH /api/v1/users/235</pre>
+          <pre class="request route highlight">PATCH /api/v1/users/432</pre>
 
 
             <h4>Body</h4>
-            <pre class="request body">{"data":{"type":"users","id":"235","attributes":{"name":"Maymie Wisoky"}}}</pre>
+            <pre class="request body">{"data":{"type":"users","id":"432","attributes":{"name":"Miss Conner Windler"}}}</pre>
 
+            <h4>cURL</h4>
+            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/users/432&quot; -d &#39;{&quot;data&quot;:{&quot;type&quot;:&quot;users&quot;,&quot;id&quot;:&quot;432&quot;,&quot;attributes&quot;:{&quot;name&quot;:&quot;Miss Conner Windler&quot;}}}&#39; -X PATCH \
+	-H &quot;Content-Type: application/vnd.api+json&quot; \
+	-H &quot;Accept: application/vnd.api+json&quot; \
+	-H &quot;Authorization: Bearer 20866a6ec22415fd02bcc4ada6a1a88e256cae7bc46bf766b0ee96c2bcfe7801&quot;</pre>
 
             <h3>Response</h3>
               <h4>Headers</h4>
@@ -190,7 +195,7 @@ Authorization: Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c4819
             <h4>Status</h4>
             <pre class="response status">200 OK</pre>
               <h4>Body</h4>
-              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;235&quot;,&quot;type&quot;:&quot;users&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/235&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-08-20T08:32:12.869Z&quot;,&quot;updated-at&quot;:&quot;2015-08-20T08:32:12.879Z&quot;,&quot;name&quot;:&quot;Maymie Wisoky&quot;,&quot;email&quot;:&quot;reymundo@collinsgleason.net&quot;,&quot;password&quot;:null},&quot;relationships&quot;:{&quot;vutes&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/235/relationships/vutes&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/users/235/vutes&quot;}}}}}</pre>
+              <pre class="response body">{&quot;data&quot;:{&quot;id&quot;:&quot;432&quot;,&quot;type&quot;:&quot;users&quot;,&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/432&quot;},&quot;attributes&quot;:{&quot;created-at&quot;:&quot;2015-10-27T02:10:10.318Z&quot;,&quot;updated-at&quot;:&quot;2015-10-27T02:10:10.329Z&quot;,&quot;name&quot;:&quot;Miss Conner Windler&quot;,&quot;email&quot;:&quot;kennith.friesen@gerhold.co&quot;,&quot;password&quot;:null},&quot;relationships&quot;:{&quot;vutes&quot;:{&quot;links&quot;:{&quot;self&quot;:&quot;http://example.org/api/v1/users/432/relationships/vutes&quot;,&quot;related&quot;:&quot;http://example.org/api/v1/users/432/vutes&quot;}}}}}</pre>
       </div>
     </div>
   </body>

@@ -1,5 +1,4 @@
 
-# To match my PAW requests
 user = User.create! name: "rian", email: "rian@rod.com", password: 'rody'
 Vute.create! keyword: "I am Rian.", user: user
 

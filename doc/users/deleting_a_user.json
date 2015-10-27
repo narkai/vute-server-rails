@@ -13,11 +13,11 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/api/v1/users/234",
+      "request_path": "/api/v1/users/433",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer b152abfed9d31a71d55070ea624785cd1c051183ce4fd843a88ad32378c8999e"
+        "Authorization": "Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14"
       },
       "request_query_parameters": {
       },
@@ -28,7 +28,7 @@
       "response_headers": {
       },
       "response_content_type": null,
-      "curl": null
+      "curl": "curl \"http://localhost:3000/api/v1/users/433\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14\""
     }
   ]
 }

@@ -17,23 +17,23 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/vutes/49",
+      "request_path": "/api/v1/vutes/243",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 7193d7dd9a87a201070ae31d2a49b90ba160d5aeba85e6664c98d2fe95587153"
+        "Authorization": "Bearer 29ed00c163118e81d442dae53d44146a47c9d1ea0a9cf8ab09cbf7b7ca1883f2"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"49\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/49\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.953Z\",\"updated-at\":\"2015-08-20T08:32:12.953Z\",\"keyword\":\"I'll compress the redundant SAS port, that should bus the SMTP port!\",\"user-id\":232},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/49/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/49/user\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"243\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/243\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.478Z\",\"updated-at\":\"2015-10-27T02:10:10.478Z\",\"keyword\":\"Try to bypass the GB alarm, maybe it will copy the redundant hard drive!\",\"user-id\":440},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/243/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/243/user\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": null
+      "curl": "curl \"http://localhost:3000/api/v1/vutes/243\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 29ed00c163118e81d442dae53d44146a47c9d1ea0a9cf8ab09cbf7b7ca1883f2\""
     }
   ]
 }

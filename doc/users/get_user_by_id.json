@@ -17,23 +17,23 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/users/233",
+      "request_path": "/api/v1/users/431",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer b05c5dabf6321d879eac13419d5cc3d6d7a37e76fe931390bb973222f18a4bb2"
+        "Authorization": "Bearer 2257cfe9719de144c327284770243a8c8ebcef36b21cb9d682ee479319839470"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"233\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/233\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.796Z\",\"updated-at\":\"2015-08-20T08:32:12.796Z\",\"name\":\"Adrienne Beier III\",\"email\":\"reymundo@collinsgleason.net\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/233/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/233/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"431\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/431\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.273Z\",\"updated-at\":\"2015-10-27T02:10:10.273Z\",\"name\":\"Hilma Raynor\",\"email\":\"kennith.friesen@gerhold.co\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/431/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/431/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": null
+      "curl": "curl \"http://localhost:3000/api/v1/users/431\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 2257cfe9719de144c327284770243a8c8ebcef36b21cb9d682ee479319839470\""
     }
   ]
 }

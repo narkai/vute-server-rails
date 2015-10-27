@@ -36,22 +36,22 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/users",
-      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Scotty Hegmann\",\"email\":\"roselyn_mosciski@veum.com\",\"password\":\"kv122w9y1\"}}}",
+      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Nathanael Stracke\",\"email\":\"mercedes.ferry@wiza.net\",\"password\":\"r9wqkus56\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 6f53bb260ea229159e97b2fc92fe78aa801b51ac057bd4d28d365c48195f318a"
+        "Authorization": "Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"236\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/236\"},\"attributes\":{\"created-at\":\"2015-08-20T08:32:12.889Z\",\"updated-at\":\"2015-08-20T08:32:12.889Z\",\"name\":\"Scotty Hegmann\",\"email\":\"roselyn_mosciski@veum.com\",\"password\":\"kv122w9y1\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/236/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/236/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"434\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/434\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.361Z\",\"updated-at\":\"2015-10-27T02:10:10.361Z\",\"name\":\"Nathanael Stracke\",\"email\":\"mercedes.ferry@wiza.net\",\"password\":\"r9wqkus56\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/434/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/434/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": null
+      "curl": "curl \"http://localhost:3000/api/v1/users\" -d '{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Nathanael Stracke\",\"email\":\"mercedes.ferry@wiza.net\",\"password\":\"r9wqkus56\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14\""
     }
   ]
 }
