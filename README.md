@@ -1,4 +1,4 @@
-# VUTE SERVER
+# Vute-server
 
 **VUTE**
 
