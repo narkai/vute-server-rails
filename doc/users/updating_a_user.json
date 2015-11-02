@@ -37,23 +37,23 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "/api/v1/users/432",
-      "request_body": "{\"data\":{\"type\":\"users\",\"id\":\"432\",\"attributes\":{\"name\":\"Miss Conner Windler\"}}}",
+      "request_path": "/api/v1/users/473",
+      "request_body": "{\"data\":{\"type\":\"users\",\"id\":\"473\",\"attributes\":{\"name\":\"Emilia Streich\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 20866a6ec22415fd02bcc4ada6a1a88e256cae7bc46bf766b0ee96c2bcfe7801"
+        "Authorization": "Bearer ea790095a0babd6b9a37b7cf2c8f99925a5c55560f9e51dc11c014ac1efff685"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"432\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/432\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.318Z\",\"updated-at\":\"2015-10-27T02:10:10.329Z\",\"name\":\"Miss Conner Windler\",\"email\":\"kennith.friesen@gerhold.co\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/432/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/432/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"473\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/473\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.801Z\",\"updated-at\":\"2015-11-02T16:16:40.814Z\",\"name\":\"Emilia Streich\",\"email\":\"whitney_rosenbaum@strosin.org\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/473/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/473/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/users/432\" -d '{\"data\":{\"type\":\"users\",\"id\":\"432\",\"attributes\":{\"name\":\"Miss Conner Windler\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 20866a6ec22415fd02bcc4ada6a1a88e256cae7bc46bf766b0ee96c2bcfe7801\""
+      "curl": "curl \"http://localhost:3000/api/v1/users/473\" -d '{\"data\":{\"type\":\"users\",\"id\":\"473\",\"attributes\":{\"name\":\"Emilia Streich\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer ea790095a0babd6b9a37b7cf2c8f99925a5c55560f9e51dc11c014ac1efff685\""
     }
   ]
 }

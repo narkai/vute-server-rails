@@ -13,17 +13,17 @@ Request:
   POST /oauth/token
   Content-Type: application/json
 
-  {"grant_type":"password","username":"Hilma Raynor","password":"as44td3sy"}
+  {"grant_type":"password","username":"Eleanora Ondricka","password":"ddf2fmdxd"}
 
 Response:
   Status: 200 OK
   Content-Type: application/json; charset=utf-8
 
   {
-    "access_token": "4731a9783df6514113600ffcd16d436d37c76e0a5506466aa0b49de0ea281542",
+    "access_token": "ab9861858fcd41b22664f03f7f2c096c0681f646930dbc9a2377e2e34bfd2552",
     "token_type": "bearer",
     "expires_in": 7200,
-    "created_at": 1445911810
+    "created_at": 1446481000
   }
 
 

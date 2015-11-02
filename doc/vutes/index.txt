@@ -1,3 +1,26 @@
+Create a vute
+-------------
+
+Parameters:
+  * type -           Should always be set to <code>vutes</code>.
+
+  * keyword -           The keyword of the vute.
+
+
+Request:
+  POST /api/v1/vutes
+  Authorization: Bearer 0a1bb9d40178eb1a23042d73889362f1885238cde813d4ae5dd54b572d588c18
+  Content-Type: application/vnd.api+json
+
+  {"data":{"type":"vutes","attributes":{"keyword":"The EXE port is down, parse the redundant program so we can connect the XSS driver!"}}}
+
+Response:
+  Status: 201 Created
+  Content-Type: application/vnd.api+json
+
+  {"data":{"id":"262","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/262"},"attributes":{"created-at":"2015-11-02T16:16:40.875Z","updated-at":"2015-11-02T16:16:40.875Z","keyword":"The EXE port is down, parse the redundant program so we can connect the XSS driver!","user-id":476},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/262/relationships/user","related":"http://example.org/api/v1/vutes/262/user"}}}}}
+
+
 Deleting a vute
 ---------------
 
@@ -6,13 +29,32 @@ Parameters:
 
 
 Request:
-  DELETE /api/v1/vutes/238
-  Authorization: Bearer 43953917a40987de9fb608a5f608e7bbb125a12f9cf9a38914d3746e76f4cf0a
+  DELETE /api/v1/vutes/263
+  Authorization: Bearer 4298e54b44c2df5cca0cd43b8c7d0c3d2e93114b642fa94acb782dbec35cc7d3
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 204 No Content
 
+
+
+Get vute by id
+--------------
+
+Parameters:
+  * id -           ID of the vute to be retrieved.
+
+
+Request:
+  GET /api/v1/vutes/264
+  Authorization: Bearer 2c4bfb9413939548cd25ed5a31d62b8d298c38b69939401797b22e9b10b753d2
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 200 OK
+  Content-Type: application/vnd.api+json
+
+  {"data":{"id":"264","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/264"},"attributes":{"created-at":"2015-11-02T16:16:40.903Z","updated-at":"2015-11-02T16:16:40.903Z","keyword":"Use the solid state RAM system, then you can compress the auxiliary array!","user-id":478},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/264/relationships/user","related":"http://example.org/api/v1/vutes/264/user"}}}}}
 
 
 Updating a vute
@@ -27,17 +69,17 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/vutes/239
-  Authorization: Bearer cb83498d621b749512596a210fb8c31eb9c1c1dec00b37307caa142fd37a2209
+  PATCH /api/v1/vutes/265
+  Authorization: Bearer ffeeb9b0ff15112271ff0531dfc39caea78ebb1664f055e6c7cbf505e8733fa4
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"vutes","id":"239","attributes":{"keyword":"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!"}}}
+  {"data":{"type":"vutes","id":"265","attributes":{"keyword":"Try to transmit the COM transmitter, maybe it will copy the redundant driver!"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"239","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/239"},"attributes":{"created-at":"2015-10-27T02:10:10.412Z","updated-at":"2015-10-27T02:10:10.419Z","keyword":"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!","user-id":437},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/239/relationships/user","related":"http://example.org/api/v1/vutes/239/user"}}}}}
+  {"data":{"id":"265","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/265"},"attributes":{"created-at":"2015-11-02T16:16:40.920Z","updated-at":"2015-11-02T16:16:40.927Z","keyword":"Try to transmit the COM transmitter, maybe it will copy the redundant driver!","user-id":479},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/265/relationships/user","related":"http://example.org/api/v1/vutes/265/user"}}}}}
 
 
 List vutes
@@ -45,53 +87,11 @@ List vutes
 
 Request:
   GET /api/v1/vutes
-  Authorization: Bearer 27420d8f0647e9846837e9adcf9d9f86bc0e131e49d2f493331d5b9a47df7270
+  Authorization: Bearer 568d52159a72c1540e78dca5259d221ad3b0f4b4ea39a14a33a3e83ee33ba123
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":[{"id":"240","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/240"},"attributes":{"created-at":"2015-10-27T02:10:10.432Z","updated-at":"2015-10-27T02:10:10.432Z","keyword":"Use the open-source RAM bandwidth, then you can input the optical monitor!","user-id":438},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/240/relationships/user","related":"http://example.org/api/v1/vutes/240/user"}}}},{"id":"241","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/241"},"attributes":{"created-at":"2015-10-27T02:10:10.436Z","updated-at":"2015-10-27T02:10:10.436Z","keyword":"I'll hack the optical USB interface, that should pixel the USB feed!","user-id":438},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/241/relationships/user","related":"http://example.org/api/v1/vutes/241/user"}}}}],"meta":{"record-count":2},"links":{"first":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0","last":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0"}}
-
-
-Create a vute
--------------
-
-Parameters:
-  * type -           Should always be set to <code>vutes</code>.
-
-  * keyword -           The keyword of the vute.
-
-
-Request:
-  POST /api/v1/vutes
-  Authorization: Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873
-  Content-Type: application/vnd.api+json
-
-  {"data":{"type":"vutes","attributes":{"keyword":"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!"}}}
-
-Response:
-  Status: 201 Created
-  Content-Type: application/vnd.api+json
-
-  {"data":{"id":"242","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/242"},"attributes":{"created-at":"2015-10-27T02:10:10.465Z","updated-at":"2015-10-27T02:10:10.465Z","keyword":"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!","user-id":439},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/242/relationships/user","related":"http://example.org/api/v1/vutes/242/user"}}}}}
-
-
-Get vute by id
---------------
-
-Parameters:
-  * id -           ID of the vute to be retrieved.
-
-
-Request:
-  GET /api/v1/vutes/243
-  Authorization: Bearer 29ed00c163118e81d442dae53d44146a47c9d1ea0a9cf8ab09cbf7b7ca1883f2
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-  {"data":{"id":"243","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/243"},"attributes":{"created-at":"2015-10-27T02:10:10.478Z","updated-at":"2015-10-27T02:10:10.478Z","keyword":"Try to bypass the GB alarm, maybe it will copy the redundant hard drive!","user-id":440},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/243/relationships/user","related":"http://example.org/api/v1/vutes/243/user"}}}}}
+  {"data":[{"id":"266","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/266"},"attributes":{"created-at":"2015-11-02T16:16:40.938Z","updated-at":"2015-11-02T16:16:40.938Z","keyword":"You can't bypass the interface without bypassing the optical IB program!","user-id":480},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/266/relationships/user","related":"http://example.org/api/v1/vutes/266/user"}}}},{"id":"267","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/267"},"attributes":{"created-at":"2015-11-02T16:16:40.942Z","updated-at":"2015-11-02T16:16:40.942Z","keyword":"Try to reboot the PCI interface, maybe it will compress the multi-byte firewall!","user-id":480},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/267/relationships/user","related":"http://example.org/api/v1/vutes/267/user"}}}}],"meta":{"record-count":2},"links":{"first":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0","last":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0"}}

@@ -2,18 +2,12 @@
 
 **VUTE**
 
-A minimal API for personal development.
+Server application for Vute.
 
-**by Karian Foehr**
-
-Epfl+Ecal Lab, Cause, Thibaud-Guillaume Gentil
-
-**Deploy it by yourself**
+**Karian Føhr**
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vuteOrg/server)
 
 ---
 
-*HEIGVD - MASRAD2* |
-*Master of advanced studies in Rapid Application Development* |
-*Volée 2*
+*HEIG-VD* • *HE-Arc* • *MASRAD2 - Master of Advanced Studies in Rapid Application Development 2*

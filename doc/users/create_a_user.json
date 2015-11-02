@@ -36,22 +36,21 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/users",
-      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Nathanael Stracke\",\"email\":\"mercedes.ferry@wiza.net\",\"password\":\"r9wqkus56\"}}}",
+      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Edward Kub DDS\",\"email\":\"victoria_gusikowski@grimes.com\",\"password\":\"y4rse7rat\"}}}",
       "request_headers": {
-        "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14"
+        "Content-Type": "application/vnd.api+json"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"434\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/434\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.361Z\",\"updated-at\":\"2015-10-27T02:10:10.361Z\",\"name\":\"Nathanael Stracke\",\"email\":\"mercedes.ferry@wiza.net\",\"password\":\"r9wqkus56\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/434/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/434/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"471\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/471\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.746Z\",\"updated-at\":\"2015-11-02T16:16:40.746Z\",\"name\":\"Edward Kub DDS\",\"email\":\"victoria_gusikowski@grimes.com\",\"password\":\"y4rse7rat\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/471/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/471/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/users\" -d '{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Nathanael Stracke\",\"email\":\"mercedes.ferry@wiza.net\",\"password\":\"r9wqkus56\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14\""
+      "curl": "curl \"http://localhost:3000/api/v1/users\" -d '{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Edward Kub DDS\",\"email\":\"victoria_gusikowski@grimes.com\",\"password\":\"y4rse7rat\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\""
     }
   ]
 }

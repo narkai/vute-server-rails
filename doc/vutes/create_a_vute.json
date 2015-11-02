@@ -24,22 +24,22 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/vutes",
-      "request_body": "{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!\"}}}",
+      "request_body": "{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"The EXE port is down, parse the redundant program so we can connect the XSS driver!\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873"
+        "Authorization": "Bearer 0a1bb9d40178eb1a23042d73889362f1885238cde813d4ae5dd54b572d588c18"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"242\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/242\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.465Z\",\"updated-at\":\"2015-10-27T02:10:10.465Z\",\"keyword\":\"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!\",\"user-id\":439},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/242/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/242/user\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"262\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/262\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.875Z\",\"updated-at\":\"2015-11-02T16:16:40.875Z\",\"keyword\":\"The EXE port is down, parse the redundant program so we can connect the XSS driver!\",\"user-id\":476},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/262/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/262/user\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/vutes\" -d '{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"The HTTP port is down, index the back-end hard drive so we can reboot the PCI bus!\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 32c02c195f0eeb789cd2516b68a9e96a2909b0bdf27a32fa45c860bdc6494873\""
+      "curl": "curl \"http://localhost:3000/api/v1/vutes\" -d '{\"data\":{\"type\":\"vutes\",\"attributes\":{\"keyword\":\"The EXE port is down, parse the redundant program so we can connect the XSS driver!\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 0a1bb9d40178eb1a23042d73889362f1885238cde813d4ae5dd54b572d588c18\""
     }
   ]
 }

@@ -17,19 +17,19 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 27420d8f0647e9846837e9adcf9d9f86bc0e131e49d2f493331d5b9a47df7270"
+        "Authorization": "Bearer 568d52159a72c1540e78dca5259d221ad3b0f4b4ea39a14a33a3e83ee33ba123"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"240\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/240\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.432Z\",\"updated-at\":\"2015-10-27T02:10:10.432Z\",\"keyword\":\"Use the open-source RAM bandwidth, then you can input the optical monitor!\",\"user-id\":438},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/240/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/240/user\"}}}},{\"id\":\"241\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/241\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.436Z\",\"updated-at\":\"2015-10-27T02:10:10.436Z\",\"keyword\":\"I'll hack the optical USB interface, that should pixel the USB feed!\",\"user-id\":438},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/241/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/241/user\"}}}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"266\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/266\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.938Z\",\"updated-at\":\"2015-11-02T16:16:40.938Z\",\"keyword\":\"You can't bypass the interface without bypassing the optical IB program!\",\"user-id\":480},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/266/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/266/user\"}}}},{\"id\":\"267\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/267\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.942Z\",\"updated-at\":\"2015-11-02T16:16:40.942Z\",\"keyword\":\"Try to reboot the PCI interface, maybe it will compress the multi-byte firewall!\",\"user-id\":480},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/267/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/267/user\"}}}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/vutes\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 27420d8f0647e9846837e9adcf9d9f86bc0e131e49d2f493331d5b9a47df7270\""
+      "curl": "curl \"http://localhost:3000/api/v1/vutes\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 568d52159a72c1540e78dca5259d221ad3b0f4b4ea39a14a33a3e83ee33ba123\""
     }
   ]
 }

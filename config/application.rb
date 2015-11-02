@@ -26,8 +26,12 @@ module VuteServer
     #K
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins 'localhost:4200'
-        resource '*', :headers => :any, :methods => [:get, :post, :delete, :put, :patch, :options, :head]
+        origins '*'
+        # origins ENV['CLIENT_URL']
+
+        resource '*',
+          :headers => :any,
+          :methods => [:get, :post, :delete, :put, :patch, :options, :head]
       end
     end
 

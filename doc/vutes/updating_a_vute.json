@@ -28,23 +28,23 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "/api/v1/vutes/239",
-      "request_body": "{\"data\":{\"type\":\"vutes\",\"id\":\"239\",\"attributes\":{\"keyword\":\"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!\"}}}",
+      "request_path": "/api/v1/vutes/265",
+      "request_body": "{\"data\":{\"type\":\"vutes\",\"id\":\"265\",\"attributes\":{\"keyword\":\"Try to transmit the COM transmitter, maybe it will copy the redundant driver!\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer cb83498d621b749512596a210fb8c31eb9c1c1dec00b37307caa142fd37a2209"
+        "Authorization": "Bearer ffeeb9b0ff15112271ff0531dfc39caea78ebb1664f055e6c7cbf505e8733fa4"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"239\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/239\"},\"attributes\":{\"created-at\":\"2015-10-27T02:10:10.412Z\",\"updated-at\":\"2015-10-27T02:10:10.419Z\",\"keyword\":\"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!\",\"user-id\":437},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/239/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/239/user\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"265\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/265\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.920Z\",\"updated-at\":\"2015-11-02T16:16:40.927Z\",\"keyword\":\"Try to transmit the COM transmitter, maybe it will copy the redundant driver!\",\"user-id\":479},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/265/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/265/user\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/vutes/239\" -d '{\"data\":{\"type\":\"vutes\",\"id\":\"239\",\"attributes\":{\"keyword\":\"If we override the driver, we can get to the IB protocol through the solid state SDD circuit!\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer cb83498d621b749512596a210fb8c31eb9c1c1dec00b37307caa142fd37a2209\""
+      "curl": "curl \"http://localhost:3000/api/v1/vutes/265\" -d '{\"data\":{\"type\":\"vutes\",\"id\":\"265\",\"attributes\":{\"keyword\":\"Try to transmit the COM transmitter, maybe it will copy the redundant driver!\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer ffeeb9b0ff15112271ff0531dfc39caea78ebb1664f055e6c7cbf505e8733fa4\""
     }
   ]
 }

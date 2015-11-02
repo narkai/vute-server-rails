@@ -13,11 +13,11 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/api/v1/users/433",
+      "request_path": "/api/v1/users/472",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14"
+        "Authorization": "Bearer b04de1058b1b76c1db1857dabc56ac159662bf3db4f82d2cb6e0fbff7f793f11"
       },
       "request_query_parameters": {
       },
@@ -28,7 +28,7 @@
       "response_headers": {
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/api/v1/users/433\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14\""
+      "curl": "curl \"http://localhost:3000/api/v1/users/472\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer b04de1058b1b76c1db1857dabc56ac159662bf3db4f82d2cb6e0fbff7f793f11\""
     }
   ]
 }

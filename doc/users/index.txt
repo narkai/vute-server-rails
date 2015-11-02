@@ -1,20 +1,40 @@
-Get user by id
---------------
+Create a user
+-------------
 
 Parameters:
-  * id -           ID of the user to be retrieved.
+  * type -           Should always be set to <code>users</code>.
+
+  * name -           The name of the user.
+
+  * email -           The email of the user.
+
+  * password -           The password of the user.
 
 
 Request:
-  GET /api/v1/users/431
-  Authorization: Bearer 2257cfe9719de144c327284770243a8c8ebcef36b21cb9d682ee479319839470
+  POST /api/v1/users
+  Content-Type: application/vnd.api+json
+
+  {"data":{"type":"users","attributes":{"name":"Edward Kub DDS","email":"victoria_gusikowski@grimes.com","password":"y4rse7rat"}}}
+
+Response:
+  Status: 201 Created
+  Content-Type: application/vnd.api+json
+
+  {"data":{"id":"471","type":"users","links":{"self":"http://example.org/api/v1/users/471"},"attributes":{"created-at":"2015-11-02T16:16:40.746Z","updated-at":"2015-11-02T16:16:40.746Z","name":"Edward Kub DDS","email":"victoria_gusikowski@grimes.com","password":"y4rse7rat"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/471/relationships/vutes","related":"http://example.org/api/v1/users/471/vutes"}}}}}
+
+
+Deleting a user
+---------------
+
+Request:
+  DELETE /api/v1/users/472
+  Authorization: Bearer b04de1058b1b76c1db1857dabc56ac159662bf3db4f82d2cb6e0fbff7f793f11
   Content-Type: application/vnd.api+json
 
 Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
+  Status: 204 No Content
 
-  {"data":{"id":"431","type":"users","links":{"self":"http://example.org/api/v1/users/431"},"attributes":{"created-at":"2015-10-27T02:10:10.273Z","updated-at":"2015-10-27T02:10:10.273Z","name":"Hilma Raynor","email":"kennith.friesen@gerhold.co","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/431/relationships/vutes","related":"http://example.org/api/v1/users/431/vutes"}}}}}
 
 
 Updating a user
@@ -33,56 +53,35 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/users/432
-  Authorization: Bearer 20866a6ec22415fd02bcc4ada6a1a88e256cae7bc46bf766b0ee96c2bcfe7801
+  PATCH /api/v1/users/473
+  Authorization: Bearer ea790095a0babd6b9a37b7cf2c8f99925a5c55560f9e51dc11c014ac1efff685
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","id":"432","attributes":{"name":"Miss Conner Windler"}}}
+  {"data":{"type":"users","id":"473","attributes":{"name":"Emilia Streich"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"432","type":"users","links":{"self":"http://example.org/api/v1/users/432"},"attributes":{"created-at":"2015-10-27T02:10:10.318Z","updated-at":"2015-10-27T02:10:10.329Z","name":"Miss Conner Windler","email":"kennith.friesen@gerhold.co","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/432/relationships/vutes","related":"http://example.org/api/v1/users/432/vutes"}}}}}
+  {"data":{"id":"473","type":"users","links":{"self":"http://example.org/api/v1/users/473"},"attributes":{"created-at":"2015-11-02T16:16:40.801Z","updated-at":"2015-11-02T16:16:40.814Z","name":"Emilia Streich","email":"whitney_rosenbaum@strosin.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/473/relationships/vutes","related":"http://example.org/api/v1/users/473/vutes"}}}}}
 
 
-Deleting a user
----------------
-
-Request:
-  DELETE /api/v1/users/433
-  Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 204 No Content
-
-
-
-Create a user
--------------
+Get user by id
+--------------
 
 Parameters:
-  * type -           Should always be set to <code>users</code>.
-
-  * name -           The name of the user.
-
-  * email -           The email of the user.
-
-  * password -           The password of the user.
+  * id -           ID of the user to be retrieved.
 
 
 Request:
-  POST /api/v1/users
-  Authorization: Bearer f79654fbf3d1d9b21c2ac6e5135227464658ee6dceecb8b277c5561cf87f5c14
+  GET /api/v1/users/474
+  Authorization: Bearer 26b568aab2b590f71751cde86c52d33a94a0118208214fca7e8e76d2730f14f8
   Content-Type: application/vnd.api+json
-
-  {"data":{"type":"users","attributes":{"name":"Nathanael Stracke","email":"mercedes.ferry@wiza.net","password":"r9wqkus56"}}}
 
 Response:
-  Status: 201 Created
+  Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"434","type":"users","links":{"self":"http://example.org/api/v1/users/434"},"attributes":{"created-at":"2015-10-27T02:10:10.361Z","updated-at":"2015-10-27T02:10:10.361Z","name":"Nathanael Stracke","email":"mercedes.ferry@wiza.net","password":"r9wqkus56"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/434/relationships/vutes","related":"http://example.org/api/v1/users/434/vutes"}}}}}
+  {"data":{"id":"474","type":"users","links":{"self":"http://example.org/api/v1/users/474"},"attributes":{"created-at":"2015-11-02T16:16:40.825Z","updated-at":"2015-11-02T16:16:40.825Z","name":"Eleanora Ondricka","email":"whitney_rosenbaum@strosin.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/474/relationships/vutes","related":"http://example.org/api/v1/users/474/vutes"}}}}}
 
 
