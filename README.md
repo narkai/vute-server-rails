@@ -6,6 +6,12 @@ Server application for **Vute**.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vuteOrg/server)
 
+---
+
+*HEIG-VD* • *HE-Arc* • *MASRAD2 - Master of Advanced Studies in Rapid Application Development 2*
+
+---
+
 # cURL request examples
 
 ### Create a user
@@ -18,7 +24,3 @@ curl "https://vute-server.herokuapp.com/api/v1/users" -d '{"data":{"type":"users
 
 curl "https://vute-server.herokuapp.com/oauth/token" -d '{"grant_type":"password","username":"jim","password":"jimy"}' -X POST \
   -H "Content-Type: application/json"
-
----
-
-*HEIG-VD* • *HE-Arc* • *MASRAD2 - Master of Advanced Studies in Rapid Application Development 2*
