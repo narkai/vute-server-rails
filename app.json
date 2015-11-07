@@ -3,5 +3,11 @@
   "description": "Server application for Vute.",
   "repository": "https://github.com/vuteOrg/server",
   "logo": "https://raw.githubusercontent.com/vuteOrg/server/master/public/vute_logo_grey.jpg",
-  "keywords": ["vute", "rails"]
+  "keywords": ["vute", "rails"],
+  "env": {
+    "CLIENTS_URL": {
+      "description": "The urls of Vute client applications.",
+      "value": "*"
+    }
+  }
 }

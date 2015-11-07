@@ -26,8 +26,8 @@ module VuteServer
     #K
     config.middleware.insert_before 0, "Rack::Cors" do
       allow do
-        origins '*'
-        # origins ENV['CLIENT_URL']
+        # origins '*'
+        origins ENV['CLIENTS_URL']
 
         resource '*',
           :headers => :any,
