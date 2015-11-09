@@ -9,5 +9,8 @@
       "description": "The urls of Vute client applications.",
       "value": "*"
     }
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake db:migrate"
   }
 }
