@@ -17,11 +17,11 @@
   "requests": [
     {
       "request_method": "DELETE",
-      "request_path": "/api/v1/vutes/263",
+      "request_path": "/api/v1/vutes/340",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 4298e54b44c2df5cca0cd43b8c7d0c3d2e93114b642fa94acb782dbec35cc7d3"
+        "Authorization": "Bearer 4086c816ab0b3fb5f40a83d5b0ef3a5f2e92de304314307b7abb19adc53f7212"
       },
       "request_query_parameters": {
       },
@@ -32,7 +32,7 @@
       "response_headers": {
       },
       "response_content_type": null,
-      "curl": "curl \"http://localhost:3000/api/v1/vutes/263\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 4298e54b44c2df5cca0cd43b8c7d0c3d2e93114b642fa94acb782dbec35cc7d3\""
+      "curl": "curl \"http://localhost:3000/api/v1/vutes/340\" -d '' -X DELETE \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 4086c816ab0b3fb5f40a83d5b0ef3a5f2e92de304314307b7abb19adc53f7212\""
     }
   ]
 }

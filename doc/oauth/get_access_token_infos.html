@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Vutes API</title>
+    <title>Oauth API</title>
     <meta charset="utf-8">
     <style>
       
@@ -106,54 +106,50 @@ table th, table td {
   </head>
   <body>
     <div class="container">
-      <h1>Vutes API</h1>
+      <h1>Oauth API</h1>
 
       <div class="article">
-        <h2>Deleting a vute</h2>
-        <h3>DELETE /api/v1/vutes/:id</h3>
+        <h2>Get access token infos</h2>
+        <h3>GET /oauth/token/info</h3>
+          <p class="explanation">
+            Return the resource_owner_id
+          </p>
 
-          <h3>Parameters</h3>
-          <table class="parameters table table-striped table-bordered table-condensed">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="required">
-                    <span class="name">id</span>
-                </td>
-                <td>
-                  <span class="description">          The id of the vute.
-</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
 
 
           <h3>Request</h3>
 
             <h4>Headers</h4>
-            <pre class="request headers">Content-Type: application/vnd.api+json
-Authorization: Bearer 4086c816ab0b3fb5f40a83d5b0ef3a5f2e92de304314307b7abb19adc53f7212</pre>
+            <pre class="request headers">Content-Type: application/json
+Authorization: Bearer 9b96b9c6d3d4c1cd56fc59f510a098706075e69da1e41c3cd2fd1f64e2008f50</pre>
 
           <h4>Route</h4>
-          <pre class="request route highlight">DELETE /api/v1/vutes/340</pre>
+          <pre class="request route highlight">GET /oauth/token/info</pre>
 
 
 
             <h4>cURL</h4>
-            <pre class="request curl">curl &quot;http://localhost:3000/api/v1/vutes/340&quot; -d &#39;&#39; -X DELETE \
-	-H &quot;Content-Type: application/vnd.api+json&quot; \
-	-H &quot;Accept: application/vnd.api+json&quot; \
-	-H &quot;Authorization: Bearer 4086c816ab0b3fb5f40a83d5b0ef3a5f2e92de304314307b7abb19adc53f7212&quot;</pre>
+            <pre class="request curl">curl &quot;http://localhost:3000/oauth/token/info&quot; -X GET \
+	-H &quot;Content-Type: application/json&quot; \
+	-H &quot;Authorization: Bearer 9b96b9c6d3d4c1cd56fc59f510a098706075e69da1e41c3cd2fd1f64e2008f50&quot;</pre>
 
             <h3>Response</h3>
+              <h4>Headers</h4>
+              <pre class="response headers">Content-Type: application/json; charset=utf-8</pre>
             <h4>Status</h4>
-            <pre class="response status">204 No Content</pre>
+            <pre class="response status">200 OK</pre>
+              <h4>Body</h4>
+              <pre class="response body">{
+  &quot;resource_owner_id&quot;: 615,
+  &quot;scopes&quot;: [
+
+  ],
+  &quot;expires_in_seconds&quot;: 1447109731,
+  &quot;application&quot;: {
+    &quot;uid&quot;: null
+  },
+  &quot;created_at&quot;: 1447109131
+}</pre>
       </div>
     </div>
   </body>

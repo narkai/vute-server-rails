@@ -1,3 +1,35 @@
+Deleting a vute
+---------------
+
+Parameters:
+  * id -           The id of the vute.
+
+
+Request:
+  DELETE /api/v1/vutes/340
+  Authorization: Bearer 4086c816ab0b3fb5f40a83d5b0ef3a5f2e92de304314307b7abb19adc53f7212
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 204 No Content
+
+
+
+List vutes
+----------
+
+Request:
+  GET /api/v1/vutes
+  Authorization: Bearer b6932d8c2aa5e9c630ad7ad674673cf20888087e0959d8b3801b9e8e57ea0503
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 200 OK
+  Content-Type: application/vnd.api+json
+
+  {"data":[{"id":"341","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/341"},"attributes":{"created-at":"2015-11-09T22:45:31.417Z","updated-at":"2015-11-09T22:45:31.417Z","keyword":"The FTP alarm is down, reboot the online bandwidth so we can quantify the THX protocol!","user-id":617},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/341/relationships/user","related":"http://example.org/api/v1/vutes/341/user"}}}},{"id":"342","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/342"},"attributes":{"created-at":"2015-11-09T22:45:31.420Z","updated-at":"2015-11-09T22:45:31.420Z","keyword":"The ADP pixel is down, bypass the back-end transmitter so we can parse the EXE alarm!","user-id":617},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/342/relationships/user","related":"http://example.org/api/v1/vutes/342/user"}}}}],"meta":{"record-count":2},"links":{"first":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0","last":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0"}}
+
+
 Create a vute
 -------------
 
@@ -9,52 +41,16 @@ Parameters:
 
 Request:
   POST /api/v1/vutes
-  Authorization: Bearer 0a1bb9d40178eb1a23042d73889362f1885238cde813d4ae5dd54b572d588c18
+  Authorization: Bearer f47f80803cb403dd47ef52cc8e063ab026a0c18b7bfd72fe432e8b4b9ec11664
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"vutes","attributes":{"keyword":"The EXE port is down, parse the redundant program so we can connect the XSS driver!"}}}
+  {"data":{"type":"vutes","attributes":{"keyword":"Try to navigate the PCI bus, maybe it will back up the back-end capacitor!"}}}
 
 Response:
   Status: 201 Created
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"262","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/262"},"attributes":{"created-at":"2015-11-02T16:16:40.875Z","updated-at":"2015-11-02T16:16:40.875Z","keyword":"The EXE port is down, parse the redundant program so we can connect the XSS driver!","user-id":476},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/262/relationships/user","related":"http://example.org/api/v1/vutes/262/user"}}}}}
-
-
-Deleting a vute
----------------
-
-Parameters:
-  * id -           The id of the vute.
-
-
-Request:
-  DELETE /api/v1/vutes/263
-  Authorization: Bearer 4298e54b44c2df5cca0cd43b8c7d0c3d2e93114b642fa94acb782dbec35cc7d3
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 204 No Content
-
-
-
-Get vute by id
---------------
-
-Parameters:
-  * id -           ID of the vute to be retrieved.
-
-
-Request:
-  GET /api/v1/vutes/264
-  Authorization: Bearer 2c4bfb9413939548cd25ed5a31d62b8d298c38b69939401797b22e9b10b753d2
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-  {"data":{"id":"264","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/264"},"attributes":{"created-at":"2015-11-02T16:16:40.903Z","updated-at":"2015-11-02T16:16:40.903Z","keyword":"Use the solid state RAM system, then you can compress the auxiliary array!","user-id":478},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/264/relationships/user","related":"http://example.org/api/v1/vutes/264/user"}}}}}
+  {"data":{"id":"343","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/343"},"attributes":{"created-at":"2015-11-09T22:45:31.443Z","updated-at":"2015-11-09T22:45:31.443Z","keyword":"Try to navigate the PCI bus, maybe it will back up the back-end capacitor!","user-id":618},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/343/relationships/user","related":"http://example.org/api/v1/vutes/343/user"}}}}}
 
 
 Updating a vute
@@ -69,29 +65,33 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/vutes/265
-  Authorization: Bearer ffeeb9b0ff15112271ff0531dfc39caea78ebb1664f055e6c7cbf505e8733fa4
+  PATCH /api/v1/vutes/344
+  Authorization: Bearer fe9c2e15c7d00663400627507b1d2da39f4b13caa1369dd25c19ed2a21da4dc6
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"vutes","id":"265","attributes":{"keyword":"Try to transmit the COM transmitter, maybe it will copy the redundant driver!"}}}
+  {"data":{"type":"vutes","id":"344","attributes":{"keyword":"We need to index the solid state THX transmitter!"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"265","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/265"},"attributes":{"created-at":"2015-11-02T16:16:40.920Z","updated-at":"2015-11-02T16:16:40.927Z","keyword":"Try to transmit the COM transmitter, maybe it will copy the redundant driver!","user-id":479},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/265/relationships/user","related":"http://example.org/api/v1/vutes/265/user"}}}}}
+  {"data":{"id":"344","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/344"},"attributes":{"created-at":"2015-11-09T22:45:31.457Z","updated-at":"2015-11-09T22:45:31.464Z","keyword":"We need to index the solid state THX transmitter!","user-id":619},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/344/relationships/user","related":"http://example.org/api/v1/vutes/344/user"}}}}}
 
 
-List vutes
-----------
+Get vute by id
+--------------
+
+Parameters:
+  * id -           ID of the vute to be retrieved.
+
 
 Request:
-  GET /api/v1/vutes
-  Authorization: Bearer 568d52159a72c1540e78dca5259d221ad3b0f4b4ea39a14a33a3e83ee33ba123
+  GET /api/v1/vutes/345
+  Authorization: Bearer 98373747a7b455bc260b26addf5b3955243194b6ba98226da173ea46ee5ebea5
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":[{"id":"266","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/266"},"attributes":{"created-at":"2015-11-02T16:16:40.938Z","updated-at":"2015-11-02T16:16:40.938Z","keyword":"You can't bypass the interface without bypassing the optical IB program!","user-id":480},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/266/relationships/user","related":"http://example.org/api/v1/vutes/266/user"}}}},{"id":"267","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/267"},"attributes":{"created-at":"2015-11-02T16:16:40.942Z","updated-at":"2015-11-02T16:16:40.942Z","keyword":"Try to reboot the PCI interface, maybe it will compress the multi-byte firewall!","user-id":480},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/267/relationships/user","related":"http://example.org/api/v1/vutes/267/user"}}}}],"meta":{"record-count":2},"links":{"first":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0","last":"http://example.org/api/v1/vutes?page%5Blimit%5D=100\u0026page%5Boffset%5D=0"}}
+  {"data":{"id":"345","type":"vutes","links":{"self":"http://example.org/api/v1/vutes/345"},"attributes":{"created-at":"2015-11-09T22:45:31.476Z","updated-at":"2015-11-09T22:45:31.476Z","keyword":"Try to navigate the AGP interface, maybe it will program the optical circuit!","user-id":620},"relationships":{"user":{"links":{"self":"http://example.org/api/v1/vutes/345/relationships/user","related":"http://example.org/api/v1/vutes/345/user"}}}}}

@@ -28,7 +28,7 @@
     {
       "request_method": "POST",
       "request_path": "/oauth/token",
-      "request_body": "{\"grant_type\":\"password\",\"username\":\"Eleanora Ondricka\",\"password\":\"ddf2fmdxd\"}",
+      "request_body": "{\"grant_type\":\"password\",\"username\":\"Hilda Schneider\",\"password\":\"8g3sq6xyp\"}",
       "request_headers": {
         "Content-Type": "application/json"
       },
@@ -37,12 +37,12 @@
       "request_content_type": "application/json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"access_token\": \"ab9861858fcd41b22664f03f7f2c096c0681f646930dbc9a2377e2e34bfd2552\",\n  \"token_type\": \"bearer\",\n  \"expires_in\": 7200,\n  \"created_at\": 1446481000\n}",
+      "response_body": "{\n  \"access_token\": \"d3f8920784368b321d73e6f1d86756ed46cf948be7b8274696ab84bbd981fa2a\",\n  \"token_type\": \"bearer\",\n  \"expires_in\": 7200,\n  \"created_at\": 1447109131\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8"
       },
       "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"http://localhost:3000/oauth/token\" -d '{\"grant_type\":\"password\",\"username\":\"Eleanora Ondricka\",\"password\":\"ddf2fmdxd\"}' -X POST \\\n\t-H \"Content-Type: application/json\""
+      "curl": "curl \"http://localhost:3000/oauth/token\" -d '{\"grant_type\":\"password\",\"username\":\"Hilda Schneider\",\"password\":\"8g3sq6xyp\"}' -X POST \\\n\t-H \"Content-Type: application/json\""
     }
   ]
 }

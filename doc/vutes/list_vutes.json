@@ -17,19 +17,19 @@
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 568d52159a72c1540e78dca5259d221ad3b0f4b4ea39a14a33a3e83ee33ba123"
+        "Authorization": "Bearer b6932d8c2aa5e9c630ad7ad674673cf20888087e0959d8b3801b9e8e57ea0503"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":[{\"id\":\"266\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/266\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.938Z\",\"updated-at\":\"2015-11-02T16:16:40.938Z\",\"keyword\":\"You can't bypass the interface without bypassing the optical IB program!\",\"user-id\":480},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/266/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/266/user\"}}}},{\"id\":\"267\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/267\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.942Z\",\"updated-at\":\"2015-11-02T16:16:40.942Z\",\"keyword\":\"Try to reboot the PCI interface, maybe it will compress the multi-byte firewall!\",\"user-id\":480},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/267/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/267/user\"}}}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\"}}",
+      "response_body": "{\"data\":[{\"id\":\"341\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/341\"},\"attributes\":{\"created-at\":\"2015-11-09T22:45:31.417Z\",\"updated-at\":\"2015-11-09T22:45:31.417Z\",\"keyword\":\"The FTP alarm is down, reboot the online bandwidth so we can quantify the THX protocol!\",\"user-id\":617},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/341/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/341/user\"}}}},{\"id\":\"342\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/342\"},\"attributes\":{\"created-at\":\"2015-11-09T22:45:31.420Z\",\"updated-at\":\"2015-11-09T22:45:31.420Z\",\"keyword\":\"The ADP pixel is down, bypass the back-end transmitter so we can parse the EXE alarm!\",\"user-id\":617},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/342/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/342/user\"}}}}],\"meta\":{\"record-count\":2},\"links\":{\"first\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\",\"last\":\"http://example.org/api/v1/vutes?page%5Blimit%5D=100\\u0026page%5Boffset%5D=0\"}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/vutes\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 568d52159a72c1540e78dca5259d221ad3b0f4b4ea39a14a33a3e83ee33ba123\""
+      "curl": "curl \"http://localhost:3000/api/v1/vutes\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer b6932d8c2aa5e9c630ad7ad674673cf20888087e0959d8b3801b9e8e57ea0503\""
     }
   ]
 }

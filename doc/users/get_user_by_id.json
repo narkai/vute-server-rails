@@ -17,23 +17,23 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/users/474",
+      "request_path": "/api/v1/users/612",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 26b568aab2b590f71751cde86c52d33a94a0118208214fca7e8e76d2730f14f8"
+        "Authorization": "Bearer 8f9c0197d4bc716f1c2e94b997d8e41890eada0568715245789d3ce96f35096b"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"474\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/474\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.825Z\",\"updated-at\":\"2015-11-02T16:16:40.825Z\",\"name\":\"Eleanora Ondricka\",\"email\":\"whitney_rosenbaum@strosin.org\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/474/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/474/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"612\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/612\"},\"attributes\":{\"created-at\":\"2015-11-09T22:45:31.322Z\",\"updated-at\":\"2015-11-09T22:45:31.322Z\",\"name\":\"Hilda Schneider\",\"email\":\"monserrate@hirthe.org\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/612/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/612/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/users/474\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 26b568aab2b590f71751cde86c52d33a94a0118208214fca7e8e76d2730f14f8\""
+      "curl": "curl \"http://localhost:3000/api/v1/users/612\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 8f9c0197d4bc716f1c2e94b997d8e41890eada0568715245789d3ce96f35096b\""
     }
   ]
 }

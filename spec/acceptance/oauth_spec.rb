@@ -7,6 +7,10 @@ module Api
 
       header "Content-Type", "application/json"
 
+      before(:each) do
+        headers.clear
+      end
+
       #
 
       post "/oauth/token" do
@@ -33,6 +37,21 @@ module Api
         example "Get access token" do
           do_request
           explanation "By resource owner client credentials flow"
+          expect(status).to eq 200
+        end
+      end
+
+      #
+
+      get "/oauth/token/info" do
+        let(:id) do
+          FactoryGirl.create(:user).id
+        end
+
+        example "Get access token infos" do
+          header "Authorization", authHeaderValue(id)
+          do_request
+          explanation "Return the resource_owner_id"
           expect(status).to eq 200
         end
       end

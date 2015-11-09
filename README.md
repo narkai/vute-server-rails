@@ -21,12 +21,12 @@ by **Karian Føhr**
 ## Example app
 
 * Look at the [documentation](https://vute-server.herokuapp.com/doc).
-* Test the *API* on `https://vute-server.herokuapp.com` (see request examples below).
+* Test the example app on `https://vute-server.herokuapp.com` (see request examples below).
 
 ## Request examples
 
-* Copy & paste these *cURL* requests into your terminal to try *Vute's server application* example on *Heroku*.
-* Feel free to create you own requests, create new users...
+* Copy & paste these *cURL* requests into your terminal to try the *API*.
+* Feel free to build new requests, create new users...
 
 ##### Create a user
 
@@ -49,4 +49,4 @@ curl "https://vute-server.herokuapp.com/oauth/token" -d '{"grant_type":"password
 
 ## Client application
 
-* Look at the [vute-client-ember](https://github.com/vuteOrg/client-ember) *Vute's client application*.
+* Look at the [vute-client-ember](https://github.com/vuteOrg/client-ember) client application.

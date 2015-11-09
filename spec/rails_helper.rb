@@ -32,7 +32,6 @@ RSpec.configure do |config|
   #K
   config.include ApiHelper
 
-  #K
   config.use_transactional_examples = true
 
   #

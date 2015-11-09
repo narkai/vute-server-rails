@@ -37,23 +37,23 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "/api/v1/users/473",
-      "request_body": "{\"data\":{\"type\":\"users\",\"id\":\"473\",\"attributes\":{\"name\":\"Emilia Streich\"}}}",
+      "request_path": "/api/v1/users/613",
+      "request_body": "{\"data\":{\"type\":\"users\",\"id\":\"613\",\"attributes\":{\"name\":\"Zachary Stokes\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer ea790095a0babd6b9a37b7cf2c8f99925a5c55560f9e51dc11c014ac1efff685"
+        "Authorization": "Bearer f32cafd723b64e2231f1d6bbc1b66e61376b218eb44c192e18a2622f5633a4c6"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"473\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/473\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.801Z\",\"updated-at\":\"2015-11-02T16:16:40.814Z\",\"name\":\"Emilia Streich\",\"email\":\"whitney_rosenbaum@strosin.org\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/473/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/473/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"613\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/613\"},\"attributes\":{\"created-at\":\"2015-11-09T22:45:31.338Z\",\"updated-at\":\"2015-11-09T22:45:31.351Z\",\"name\":\"Zachary Stokes\",\"email\":\"monserrate@hirthe.org\",\"password\":null},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/613/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/613/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/users/473\" -d '{\"data\":{\"type\":\"users\",\"id\":\"473\",\"attributes\":{\"name\":\"Emilia Streich\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer ea790095a0babd6b9a37b7cf2c8f99925a5c55560f9e51dc11c014ac1efff685\""
+      "curl": "curl \"http://localhost:3000/api/v1/users/613\" -d '{\"data\":{\"type\":\"users\",\"id\":\"613\",\"attributes\":{\"name\":\"Zachary Stokes\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer f32cafd723b64e2231f1d6bbc1b66e61376b218eb44c192e18a2622f5633a4c6\""
     }
   ]
 }

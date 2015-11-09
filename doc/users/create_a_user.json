@@ -36,7 +36,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/users",
-      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Edward Kub DDS\",\"email\":\"victoria_gusikowski@grimes.com\",\"password\":\"y4rse7rat\"}}}",
+      "request_body": "{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Lester Crona\",\"email\":\"tate.kunze@halvorson.biz\",\"password\":\"y22bnogst\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json"
       },
@@ -45,12 +45,12 @@
       "request_content_type": "application/vnd.api+json",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\"data\":{\"id\":\"471\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/471\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.746Z\",\"updated-at\":\"2015-11-02T16:16:40.746Z\",\"name\":\"Edward Kub DDS\",\"email\":\"victoria_gusikowski@grimes.com\",\"password\":\"y4rse7rat\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/471/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/471/vutes\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"610\",\"type\":\"users\",\"links\":{\"self\":\"http://example.org/api/v1/users/610\"},\"attributes\":{\"created-at\":\"2015-11-09T22:45:31.266Z\",\"updated-at\":\"2015-11-09T22:45:31.266Z\",\"name\":\"Lester Crona\",\"email\":\"tate.kunze@halvorson.biz\",\"password\":\"y22bnogst\"},\"relationships\":{\"vutes\":{\"links\":{\"self\":\"http://example.org/api/v1/users/610/relationships/vutes\",\"related\":\"http://example.org/api/v1/users/610/vutes\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/users\" -d '{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Edward Kub DDS\",\"email\":\"victoria_gusikowski@grimes.com\",\"password\":\"y4rse7rat\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\""
+      "curl": "curl \"http://localhost:3000/api/v1/users\" -d '{\"data\":{\"type\":\"users\",\"attributes\":{\"name\":\"Lester Crona\",\"email\":\"tate.kunze@halvorson.biz\",\"password\":\"y22bnogst\"}}}' -X POST \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\""
     }
   ]
 }

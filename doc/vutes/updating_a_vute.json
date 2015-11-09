@@ -28,23 +28,23 @@
   "requests": [
     {
       "request_method": "PATCH",
-      "request_path": "/api/v1/vutes/265",
-      "request_body": "{\"data\":{\"type\":\"vutes\",\"id\":\"265\",\"attributes\":{\"keyword\":\"Try to transmit the COM transmitter, maybe it will copy the redundant driver!\"}}}",
+      "request_path": "/api/v1/vutes/344",
+      "request_body": "{\"data\":{\"type\":\"vutes\",\"id\":\"344\",\"attributes\":{\"keyword\":\"We need to index the solid state THX transmitter!\"}}}",
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer ffeeb9b0ff15112271ff0531dfc39caea78ebb1664f055e6c7cbf505e8733fa4"
+        "Authorization": "Bearer fe9c2e15c7d00663400627507b1d2da39f4b13caa1369dd25c19ed2a21da4dc6"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"265\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/265\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.920Z\",\"updated-at\":\"2015-11-02T16:16:40.927Z\",\"keyword\":\"Try to transmit the COM transmitter, maybe it will copy the redundant driver!\",\"user-id\":479},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/265/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/265/user\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"344\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/344\"},\"attributes\":{\"created-at\":\"2015-11-09T22:45:31.457Z\",\"updated-at\":\"2015-11-09T22:45:31.464Z\",\"keyword\":\"We need to index the solid state THX transmitter!\",\"user-id\":619},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/344/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/344/user\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/vutes/265\" -d '{\"data\":{\"type\":\"vutes\",\"id\":\"265\",\"attributes\":{\"keyword\":\"Try to transmit the COM transmitter, maybe it will copy the redundant driver!\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer ffeeb9b0ff15112271ff0531dfc39caea78ebb1664f055e6c7cbf505e8733fa4\""
+      "curl": "curl \"http://localhost:3000/api/v1/vutes/344\" -d '{\"data\":{\"type\":\"vutes\",\"id\":\"344\",\"attributes\":{\"keyword\":\"We need to index the solid state THX transmitter!\"}}}' -X PATCH \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer fe9c2e15c7d00663400627507b1d2da39f4b13caa1369dd25c19ed2a21da4dc6\""
     }
   ]
 }

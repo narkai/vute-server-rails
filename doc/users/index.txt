@@ -15,26 +15,45 @@ Request:
   POST /api/v1/users
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","attributes":{"name":"Edward Kub DDS","email":"victoria_gusikowski@grimes.com","password":"y4rse7rat"}}}
+  {"data":{"type":"users","attributes":{"name":"Lester Crona","email":"tate.kunze@halvorson.biz","password":"y22bnogst"}}}
 
 Response:
   Status: 201 Created
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"471","type":"users","links":{"self":"http://example.org/api/v1/users/471"},"attributes":{"created-at":"2015-11-02T16:16:40.746Z","updated-at":"2015-11-02T16:16:40.746Z","name":"Edward Kub DDS","email":"victoria_gusikowski@grimes.com","password":"y4rse7rat"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/471/relationships/vutes","related":"http://example.org/api/v1/users/471/vutes"}}}}}
+  {"data":{"id":"610","type":"users","links":{"self":"http://example.org/api/v1/users/610"},"attributes":{"created-at":"2015-11-09T22:45:31.266Z","updated-at":"2015-11-09T22:45:31.266Z","name":"Lester Crona","email":"tate.kunze@halvorson.biz","password":"y22bnogst"},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/610/relationships/vutes","related":"http://example.org/api/v1/users/610/vutes"}}}}}
 
 
 Deleting a user
 ---------------
 
 Request:
-  DELETE /api/v1/users/472
-  Authorization: Bearer b04de1058b1b76c1db1857dabc56ac159662bf3db4f82d2cb6e0fbff7f793f11
+  DELETE /api/v1/users/611
+  Authorization: Bearer 692761f34bdb84eaaf9e82055a10e78f22d74336a0863383d4699d57e9b28ef6
   Content-Type: application/vnd.api+json
 
 Response:
   Status: 204 No Content
 
+
+
+Get user by id
+--------------
+
+Parameters:
+  * id -           ID of the user to be retrieved.
+
+
+Request:
+  GET /api/v1/users/612
+  Authorization: Bearer 8f9c0197d4bc716f1c2e94b997d8e41890eada0568715245789d3ce96f35096b
+  Content-Type: application/vnd.api+json
+
+Response:
+  Status: 200 OK
+  Content-Type: application/vnd.api+json
+
+  {"data":{"id":"612","type":"users","links":{"self":"http://example.org/api/v1/users/612"},"attributes":{"created-at":"2015-11-09T22:45:31.322Z","updated-at":"2015-11-09T22:45:31.322Z","name":"Hilda Schneider","email":"monserrate@hirthe.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/612/relationships/vutes","related":"http://example.org/api/v1/users/612/vutes"}}}}}
 
 
 Updating a user
@@ -53,35 +72,16 @@ Parameters:
 
 
 Request:
-  PATCH /api/v1/users/473
-  Authorization: Bearer ea790095a0babd6b9a37b7cf2c8f99925a5c55560f9e51dc11c014ac1efff685
+  PATCH /api/v1/users/613
+  Authorization: Bearer f32cafd723b64e2231f1d6bbc1b66e61376b218eb44c192e18a2622f5633a4c6
   Content-Type: application/vnd.api+json
 
-  {"data":{"type":"users","id":"473","attributes":{"name":"Emilia Streich"}}}
+  {"data":{"type":"users","id":"613","attributes":{"name":"Zachary Stokes"}}}
 
 Response:
   Status: 200 OK
   Content-Type: application/vnd.api+json
 
-  {"data":{"id":"473","type":"users","links":{"self":"http://example.org/api/v1/users/473"},"attributes":{"created-at":"2015-11-02T16:16:40.801Z","updated-at":"2015-11-02T16:16:40.814Z","name":"Emilia Streich","email":"whitney_rosenbaum@strosin.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/473/relationships/vutes","related":"http://example.org/api/v1/users/473/vutes"}}}}}
-
-
-Get user by id
---------------
-
-Parameters:
-  * id -           ID of the user to be retrieved.
-
-
-Request:
-  GET /api/v1/users/474
-  Authorization: Bearer 26b568aab2b590f71751cde86c52d33a94a0118208214fca7e8e76d2730f14f8
-  Content-Type: application/vnd.api+json
-
-Response:
-  Status: 200 OK
-  Content-Type: application/vnd.api+json
-
-  {"data":{"id":"474","type":"users","links":{"self":"http://example.org/api/v1/users/474"},"attributes":{"created-at":"2015-11-02T16:16:40.825Z","updated-at":"2015-11-02T16:16:40.825Z","name":"Eleanora Ondricka","email":"whitney_rosenbaum@strosin.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/474/relationships/vutes","related":"http://example.org/api/v1/users/474/vutes"}}}}}
+  {"data":{"id":"613","type":"users","links":{"self":"http://example.org/api/v1/users/613"},"attributes":{"created-at":"2015-11-09T22:45:31.338Z","updated-at":"2015-11-09T22:45:31.351Z","name":"Zachary Stokes","email":"monserrate@hirthe.org","password":null},"relationships":{"vutes":{"links":{"self":"http://example.org/api/v1/users/613/relationships/vutes","related":"http://example.org/api/v1/users/613/vutes"}}}}}
 
 

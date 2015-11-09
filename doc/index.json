@@ -9,6 +9,13 @@
           "groups": "all",
           "route": "/oauth/token",
           "method": "post"
+        },
+        {
+          "description": "Get access token infos",
+          "link": "oauth/get_access_token_infos.json",
+          "groups": "all",
+          "route": "/oauth/token/info",
+          "method": "get"
         }
       ]
     },

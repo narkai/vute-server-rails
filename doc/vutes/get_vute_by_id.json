@@ -17,23 +17,23 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/vutes/264",
+      "request_path": "/api/v1/vutes/345",
       "request_body": null,
       "request_headers": {
         "Content-Type": "application/vnd.api+json",
-        "Authorization": "Bearer 2c4bfb9413939548cd25ed5a31d62b8d298c38b69939401797b22e9b10b753d2"
+        "Authorization": "Bearer 98373747a7b455bc260b26addf5b3955243194b6ba98226da173ea46ee5ebea5"
       },
       "request_query_parameters": {
       },
       "request_content_type": "application/vnd.api+json",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\"data\":{\"id\":\"264\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/264\"},\"attributes\":{\"created-at\":\"2015-11-02T16:16:40.903Z\",\"updated-at\":\"2015-11-02T16:16:40.903Z\",\"keyword\":\"Use the solid state RAM system, then you can compress the auxiliary array!\",\"user-id\":478},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/264/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/264/user\"}}}}}",
+      "response_body": "{\"data\":{\"id\":\"345\",\"type\":\"vutes\",\"links\":{\"self\":\"http://example.org/api/v1/vutes/345\"},\"attributes\":{\"created-at\":\"2015-11-09T22:45:31.476Z\",\"updated-at\":\"2015-11-09T22:45:31.476Z\",\"keyword\":\"Try to navigate the AGP interface, maybe it will program the optical circuit!\",\"user-id\":620},\"relationships\":{\"user\":{\"links\":{\"self\":\"http://example.org/api/v1/vutes/345/relationships/user\",\"related\":\"http://example.org/api/v1/vutes/345/user\"}}}}}",
       "response_headers": {
         "Content-Type": "application/vnd.api+json"
       },
       "response_content_type": "application/vnd.api+json",
-      "curl": "curl \"http://localhost:3000/api/v1/vutes/264\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 2c4bfb9413939548cd25ed5a31d62b8d298c38b69939401797b22e9b10b753d2\""
+      "curl": "curl \"http://localhost:3000/api/v1/vutes/345\" -X GET \\\n\t-H \"Content-Type: application/vnd.api+json\" \\\n\t-H \"Accept: application/vnd.api+json\" \\\n\t-H \"Authorization: Bearer 98373747a7b455bc260b26addf5b3955243194b6ba98226da173ea46ee5ebea5\""
     }
   ]
 }

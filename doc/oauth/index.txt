@@ -13,17 +13,42 @@ Request:
   POST /oauth/token
   Content-Type: application/json
 
-  {"grant_type":"password","username":"Eleanora Ondricka","password":"ddf2fmdxd"}
+  {"grant_type":"password","username":"Hilda Schneider","password":"8g3sq6xyp"}
 
 Response:
   Status: 200 OK
   Content-Type: application/json; charset=utf-8
 
   {
-    "access_token": "ab9861858fcd41b22664f03f7f2c096c0681f646930dbc9a2377e2e34bfd2552",
+    "access_token": "d3f8920784368b321d73e6f1d86756ed46cf948be7b8274696ab84bbd981fa2a",
     "token_type": "bearer",
     "expires_in": 7200,
-    "created_at": 1446481000
+    "created_at": 1447109131
+  }
+
+
+Get access token infos
+----------------------
+
+Request:
+  GET /oauth/token/info
+  Authorization: Bearer 9b96b9c6d3d4c1cd56fc59f510a098706075e69da1e41c3cd2fd1f64e2008f50
+  Content-Type: application/json
+
+Response:
+  Status: 200 OK
+  Content-Type: application/json; charset=utf-8
+
+  {
+    "resource_owner_id": 615,
+    "scopes": [
+  
+    ],
+    "expires_in_seconds": 1447109731,
+    "application": {
+      "uid": null
+    },
+    "created_at": 1447109131
   }
 
 
