@@ -19,7 +19,7 @@ end
 
 #
 
-gem 'rails', '4.2.3'
+gem 'rails', '4.2.5'
 gem 'pg'
 
 gem 'bcrypt', '~> 3.1.7'

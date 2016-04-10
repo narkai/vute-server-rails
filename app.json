@@ -1,8 +1,8 @@
 {
-  "name": "Vute Server",
+  "name": "Vute Server Rails",
   "description": "Server application for Vute.",
-  "repository": "https://github.com/vuteOrg/server",
-  "logo": "https://raw.githubusercontent.com/vuteOrg/server/master/public/vute_logo_grey.jpg",
+  "repository": "https://github.com/lapico/vute-server-rails",
+  "logo": "https://raw.githubusercontent.com/lapico/vute-server-rails/master/public/vute_logo_grey.jpg",
   "keywords": ["vute", "rails"],
   "env": {
     "CLIENTS_URL": {

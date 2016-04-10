@@ -4,6 +4,7 @@ module Api
     class UsersController < ApiController
 
       before_action :doorkeeper_authorize!, except: :create
+      # before_action :doorkeeper_authorize!, :except => [:create, :show]
       before_action :ensure_current_user_is_resource_owner, except: :create
 
       private

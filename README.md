@@ -1,8 +1,8 @@
-# vute-server
+# vute-server-rails
 
-Server application for **Vute**.
+Rails server application for **Vute**.
 
-by **Karian Føhr**
+by **Karian Før**
 
 ---
 
@@ -16,7 +16,7 @@ by **Karian Føhr**
 * Name you app.
 * Set the `CLIENTS_URL` environment variable with a wildcard `*` if you want to test the *API* from any client.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vuteOrg/server)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lapico/vute-server-rails)
 
 ## Example app
 
@@ -49,4 +49,4 @@ curl "https://vute-server.herokuapp.com/oauth/token" -d '{"grant_type":"password
 
 ## Client application
 
-* Look at the [vute-client-ember](https://github.com/vuteOrg/client-ember) client application.
+* Look at the [vute-client-ember](https://github.com/lapico/vute-client-ember) client application.
